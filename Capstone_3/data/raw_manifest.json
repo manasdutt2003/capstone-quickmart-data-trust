@@ -1,0 +1,75 @@
+{
+  "customers": {
+    "file": "Resources/Capstone Questions/Capstone 2/data/customers.csv",
+    "sha256": "fce10decb8faefbfd37032f565c0c5e5ec8ba51a8d896975ef2f6d3a1671210f",
+    "encoding": "utf-8",
+    "header": [
+      "customer_id",
+      "customer_name",
+      "email",
+      "city",
+      "phone",
+      "signup_date"
+    ],
+    "rows_in_file": 520,
+    "rows_loaded": 520,
+    "row_length_dist": {
+      "6": 520
+    }
+  },
+  "products": {
+    "file": "Resources/Capstone Questions/Capstone 2/data/products.csv",
+    "sha256": "a08781950dc8671acdfb587f78f1ec1eaa9c6fe349ce0f8c507cd2a52e565cbb",
+    "encoding": "utf-8",
+    "header": [
+      "product_id",
+      "product_name",
+      "category",
+      "unit_price",
+      "stock_qty"
+    ],
+    "rows_in_file": 30,
+    "rows_loaded": 30,
+    "row_length_dist": {
+      "5": 30
+    }
+  },
+  "orders": {
+    "file": "Resources/Capstone Questions/Capstone 2/data/orders.csv",
+    "sha256": "03a9482ac6ecc9b0a792365672d6df144595b5f75e0f64eae1fe6f3307b619a3",
+    "encoding": "utf-8",
+    "header": [
+      "order_id",
+      "customer_id",
+      "product_id",
+      "order_date",
+      "quantity",
+      "unit_price_paid",
+      "discount",
+      "payment_mode",
+      "order_status",
+      "delivery_days",
+      "notes"
+    ],
+    "rows_in_file": 6103,
+    "rows_loaded": 6103,
+    "row_length_dist": {
+      "11": 6103
+    }
+  },
+  "customers_clean": {
+    "file": "data/customers_clean.csv",
+    "sha256": "66d185401d194062630ac81bfe7c2cd12407e21d2dfa0afa8d6e06ca4e770ba6",
+    "rows": 520
+  },
+  "products_clean": {
+    "file": "data/products_clean.csv",
+    "sha256": "973d696a1f7302042fcebf271e19ee28fa73ce7a66694ef3c45138dda9e4bdbc",
+    "rows": 30
+  },
+  "orders_clean": {
+    "file": "data/orders_clean.csv",
+    "sha256": "bb0dedb3a5b78d42152550af0b5967473093a2a8af13282ae94a6ff6e77fad01",
+    "rows": 6103
+  }
+}

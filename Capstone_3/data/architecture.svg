@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" role="img" aria-label="QuickMart pipeline architecture">
+<title>QuickMart pipeline architecture</title>
+<defs>
+<style>
+t{font-family:Calibri,Arial,sans-serif}
+.box{fill:#FFFFFF;stroke:#024879;stroke-width:2}
+.store{fill:#C5DCEE;stroke:#024879;stroke-width:2}
+.gate{fill:#71D8C5;stroke:#075056;stroke-width:2}
+.head{font-size:15px;font-weight:bold;fill:#1B2227}
+.sub{font-size:12.5px;fill:#1B2227}
+.lab{font-size:12px;fill:#324EB5;font-weight:bold}
+.arr{stroke:#324EB5;stroke-width:2;fill:none}
+</style>
+<marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#324EB5"/></marker>
+</defs>
+<rect x="0" y="0" width="1100" height="640" fill="#FFFFFF"/>
+<t x="30" y="36" class="head" font-size="20">QuickMart pipeline — raw text to trusted answers</t>
+
+<!-- sources -->
+<g>
+<rect x="30" y="60" width="180" height="86" rx="10" class="store"/>
+<t x="42" y="84" class="head">customers.csv</t><t x="42" y="104" class="sub">520 rows · 6 cols</t><t x="42" y="122" class="sub">read-only source</t>
+<rect x="30" y="156" width="180" height="86" rx="10" class="store"/>
+<t x="42" y="180" class="head">products.csv</t><t x="42" y="200" class="sub">30 rows · 5 cols</t><t x="42" y="218" class="sub">read-only source</t>
+<rect x="30" y="252" width="180" height="86" rx="10" class="store"/>
+<t x="42" y="276" class="head">orders.csv</t><t x="42" y="296" class="sub">6,103 rows · 11 cols</t><t x="42" y="314" class="sub">read-only source</t>
+</g>
+
+<!-- main flow -->
+<g>
+<rect x="270" y="90" width="170" height="80" rx="10" class="box"/>
+<t x="282" y="114" class="head">load (text)</t><t x="282" y="134" class="sub">keep every raw value</t><t x="282" y="152" class="sub">src/data_loader.py</t>
+<rect x="270" y="200" width="170" height="80" rx="10" class="box"/>
+<t x="282" y="224" class="head">clean + dedup</t><t x="282" y="244" class="sub">D01&gt;D03&gt;D02&gt;D05</t><t x="282" y="262" class="sub">6,000 rows</t>
+<rect x="270" y="310" width="170" height="80" rx="10" class="box"/>
+<t x="282" y="334" class="head">validate R01–R12</t><t x="282" y="354" class="sub">one line value (NULL)</t><t x="282" y="372" class="sub">fail log keyed by row</t>
+<rect x="500" y="90" width="180" height="110" rx="10" class="box"/>
+<t x="512" y="114" class="head">trusted populations</t><t x="512" y="134" class="sub">lenient 522 · strict 115</t><t x="512" y="152" class="sub">rejected 5,478 (407 warn)</t><t x="512" y="170" class="sub">outputs/*.csv</t>
+<rect x="500" y="230" width="180" height="110" rx="10" class="box"/>
+<t x="512" y="254" class="head">enrich + 5 marts</t><t x="512" y="274" class="sub">city/category/status/pay</t><t x="512" y="292" class="sub">sales · value · pay ·</t><t x="512" y="310" class="sub">delivery · quality</t>
+<rect x="740" y="90" width="180" height="110" rx="10" class="box"/>
+<t x="752" y="114" class="head">answer (96 SQL)</t><t x="752" y="134" class="sub">Q30–125 + parity tests</t><t x="752" y="152" class="sub">ties: order_id, C locale</t><t x="752" y="170" class="sub">sql/questions/</t>
+<rect x="740" y="230" width="180" height="110" rx="10" class="box"/>
+<t x="752" y="254" class="head">report + dashboard</t><t x="752" y="274" class="sub">aggregated-only LLM in</t><t x="752" y="292" class="sub">every figure verified</t><t x="752" y="310" class="sub">offline index.html</t>
+</g>
+
+<!-- arrows -->
+<g>
+<path d="M210 103 L268 110" class="arr" marker-end="url(#ah)"/>
+<path d="M210 199 L268 220" class="arr" marker-end="url(#ah)"/>
+<path d="M210 295 L268 340" class="arr" marker-end="url(#ah)"/>
+<path d="M440 130 L498 130" class="arr" marker-end="url(#ah)"/>
+<path d="M440 240 L498 270" class="arr" marker-end="url(#ah)"/>
+<path d="M440 350 L498 350 L498 285" class="arr" marker-end="url(#ah)"/>
+<path d="M680 130 L738 130" class="arr" marker-end="url(#ah)"/>
+<path d="M680 285 L738 285" class="arr" marker-end="url(#ah)"/>
+<path d="M830 200 L830 228" class="arr" marker-end="url(#ah)"/>
+</g>
+
+<!-- side rails -->
+<g>
+<rect x="270" y="430" width="210" height="80" rx="10" class="gate"/>
+<t x="282" y="454" class="head">mappings (40 rows)</t><t x="282" y="474" class="sub">city · status · pay · category</t><t x="282" y="492" class="sub">approval pending</t>
+<rect x="500" y="430" width="210" height="80" rx="10" class="gate"/>
+<t x="512" y="454" class="head">tests gate everything</t><t x="512" y="474" class="sub">398 passed · ruff · mypy</t><t x="512" y="492" class="sub">parity · static · PII scan</t>
+<rect x="740" y="430" width="180" height="80" rx="10" class="gate"/>
+<t x="752" y="454" class="head">hashes pin outputs</t><t x="752" y="474" class="sub">extract SHA-256 (LF)</t><t x="752" y="492" class="sub">output hashes verify</t>
+</g>
+<t x="30" y="560" class="lab">conventions: completed = Delivered + line value not null · TODAY = 2026-10-11 · commission 8% · no PII in outputs (notes masked + sha256)</t>
+<t x="30" y="584" class="lab">reproduce: python -m src.pipeline --verify-hashes · python -m pytest tests -q · python -m src.dashboard_data + python -m src.dashboard</t>
+<t x="30" y="608" class="lab">open: dashboard/index.html (present with arrow keys) · talk track: docs/presentation_script.md</t>
+</svg>

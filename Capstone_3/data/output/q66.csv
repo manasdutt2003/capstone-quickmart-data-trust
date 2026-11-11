@@ -1,0 +1,59 @@
+   coalesce   | coalesce  |    sum    | grouping 
+--------------+-----------+-----------+----------
+ (all)        | (all)     | 864150.00 |        3
+ (all)        | (all)     |   8070.00 |        0
+ Household    | Pune      |   1380.00 |        0
+ Household    | Bangalore |   7640.00 |        0
+ Dairy        | Chennai   |  13190.00 |        0
+ Snacks       | Pune      |  41660.00 |        0
+ Dairy & Eggs | Mysuru    |  10640.00 |        0
+ Grocery      | (all)     |  23150.00 |        0
+ Dairy & Eggs | Pune      |  16780.00 |        0
+ Grocery      | Pune      |  50200.00 |        0
+ Household    | Mysuru    |   1560.00 |        0
+ Snacks       | (all)     |  29420.00 |        0
+ Snacks       | Hyderabad |  13000.00 |        0
+ Snacks       | Bangalore |  85670.00 |        0
+ Beverages    | (all)     |   3200.00 |        0
+ Dairy        | Mysuru    |   4275.00 |        0
+ Beverages    | Pune      |  18345.00 |        0
+ Household    | (all)     |    630.00 |        0
+ Snacks       | Mysuru    |  13670.00 |        0
+ Beverages    | Mysuru    |  11660.00 |        0
+ (all)        | Chennai   |   2355.00 |        0
+ Snacks       | Chennai   |  55905.00 |        0
+ Household    | Hyderabad |   2180.00 |        0
+ Dairy        | Hyderabad |   1740.00 |        0
+ Dairy        | Bangalore |  30875.00 |        0
+ (all)        | Hyderabad |   2030.00 |        0
+ Dairy & Eggs | (all)     |   2845.00 |        0
+ Beverages    | Bangalore |  39325.00 |        0
+ Grocery      | Chennai   |  68260.00 |        0
+ Household    | Chennai   |  10505.00 |        0
+ Grocery      | Bangalore | 103355.00 |        0
+ Grocery      | Mysuru    |  23435.00 |        0
+ Beverages    | Hyderabad |   2485.00 |        0
+ Dairy        | (all)     |   3260.00 |        0
+ Dairy        | Pune      |  10070.00 |        0
+ (all)        | Pune      |   9680.00 |        0
+ Dairy & Eggs | Bangalore |  46660.00 |        0
+ Grocery      | Hyderabad |  35805.00 |        0
+ Dairy & Eggs | Chennai   |  14755.00 |        0
+ Beverages    | Chennai   |  27080.00 |        0
+ Dairy & Eggs | Hyderabad |   9870.00 |        0
+ (all)        | Bangalore |   7535.00 |        0
+ (all)        | (all)     |  29670.00 |        1
+ Dairy        | (all)     |  63410.00 |        1
+ Snacks       | (all)     | 239325.00 |        1
+ Grocery      | (all)     | 304205.00 |        1
+ Dairy & Eggs | (all)     | 101550.00 |        1
+ Beverages    | (all)     | 102095.00 |        1
+ Household    | (all)     |  23895.00 |        1
+ (all)        | (all)     |  70575.00 |        2
+ (all)        | Bangalore | 321060.00 |        2
+ (all)        | Chennai   | 192050.00 |        2
+ (all)        | Pune      | 148115.00 |        2
+ (all)        | Mysuru    |  65240.00 |        2
+ (all)        | Hyderabad |  67110.00 |        2
+(55 rows)
+

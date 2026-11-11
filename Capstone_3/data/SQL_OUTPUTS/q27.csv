@@ -1,0 +1,11 @@
+    scope    |                   measure                   | row_count 
+-------------+---------------------------------------------+-----------
+ product ids | product rows                                |        30 
+ product ids | repeated raw id rows                        |         0 
+ product ids | rows changed by normalisation               |         5 
+ product ids | distinct raw ids                            |        30 
+ product ids | distinct normalised ids                     |        30 
+ product ids | rows after D04 (one per normalised id)      |        30 
+ product ids | D04 merge groups (normalised ids on >1 row) |         0 
+(7 rows)
+

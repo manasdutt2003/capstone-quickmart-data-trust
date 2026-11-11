@@ -1,0 +1,8 @@
+     price_class     | row_count |                products                 
+---------------------+-----------+-----------------------------------------
+ plain number        |        24 | -                                       
+ text form (₹/comma) |         4 | P-10 ₹60, P13 ₹210, P21 1,200, P25 ₹210 
+ unusable (NA/blank) |         2 | P-26 NA, P-30 NA                        
+ parseable total     |        28 | -                                       
+(4 rows)
+

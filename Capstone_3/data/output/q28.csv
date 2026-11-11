@@ -1,0 +1,23 @@
+            scope            |             measure              | row_count 
+-----------------------------+----------------------------------+-----------
+ merge city check            | shared-email groups              |        21 
+ merge city check            | groups with differing cities     |        18 
+ merge city check            | dropped city occurrences         |        18 
+ merge city check            | raw spellings (case-insensitive) |         8 
+ dropped city (raw spelling) | Pune                             |         5 
+ dropped city (raw spelling) | Bengaluru                        |         4 
+ dropped city (raw spelling) | BLR                              |         2 
+ dropped city (raw spelling) | Mysuru                           |         2 
+ dropped city (raw spelling) | chennai                          |         2 
+ dropped city (raw spelling) | Hyderabad                        |         1 
+ dropped city (raw spelling) | Madras                           |         1 
+ dropped city (raw spelling) | bengaluru                        |         1 
+ master city (after D03)     | master rows                      |       499 
+ master city (after D03)     | Bengaluru                        |       195 
+ master city (after D03)     | Chennai                          |       106 
+ master city (after D03)     | Pune                             |        80 
+ master city (after D03)     | Hyderabad                        |        47 
+ master city (after D03)     | MISSING                          |        37 
+ master city (after D03)     | Mysuru                           |        34 
+(19 rows)
+

@@ -1,0 +1,451 @@
+order_month,city_std,category_std,orders,units,value
+2022-06,Hyderabad,Grocery,1,5,750.0
+2022-09,Pune,MISSING,1,5,5400.0
+2024-01,Bengaluru,Dairy & Eggs,2,3,609.0
+2024-01,Bengaluru,Grocery,5,13,1683.0
+2024-01,Bengaluru,Snacks,1,3,450.0
+2024-01,Chennai,Beverages,1,4,1152.0
+2024-01,Chennai,Dairy & Eggs,1,2,120.0
+2024-01,Chennai,Grocery,3,8,1620.0
+2024-01,Chennai,Snacks,3,12,8508.0
+2024-01,Hyderabad,Dairy & Eggs,1,2,96.0
+2024-01,MISSING,Grocery,1,3,306.0
+2024-01,MISSING,Snacks,1,2,300.0
+2024-01,Mysuru,Grocery,1,1,57.0
+2024-01,Pune,Grocery,1,3,3060.0
+2024-02,Bengaluru,Dairy & Eggs,1,1,108.0
+2024-02,Bengaluru,Grocery,3,11,780.0
+2024-02,Bengaluru,Snacks,2,7,1396.0
+2024-02,Chennai,Beverages,1,2,420.0
+2024-02,Chennai,Dairy & Eggs,1,3,450.0
+2024-02,Chennai,Grocery,1,3,630.0
+2024-02,Chennai,Snacks,1,1,42.75
+2024-02,Hyderabad,Beverages,1,4,180.0
+2024-02,Hyderabad,Grocery,1,5,300.0
+2024-02,MISSING,Snacks,1,3,121.5
+2024-02,Pune,Dairy & Eggs,1,1,60.0
+2024-02,Pune,Snacks,1,3,288.0
+2024-03,Bengaluru,Beverages,1,5,600.0
+2024-03,Bengaluru,Dairy & Eggs,3,7,1183.5
+2024-03,Bengaluru,Grocery,3,9,1626.0
+2024-03,Chennai,Dairy & Eggs,2,3,700.0
+2024-03,MISSING,Grocery,1,2,378.0
+2024-03,Pune,Dairy & Eggs,2,4,1197.0
+2024-04,Bengaluru,Dairy & Eggs,1,2,300.0
+2024-04,Bengaluru,Snacks,3,12,3380.0
+2024-04,Chennai,Dairy & Eggs,1,2,399.0
+2024-04,Chennai,Grocery,1,1,320.0
+2024-04,Hyderabad,Beverages,1,1,178.5
+2024-04,MISSING,Beverages,1,4,1280.0
+2024-04,MISSING,Snacks,1,2,81.0
+2024-04,Mysuru,Beverages,1,1,256.0
+2024-04,Mysuru,Snacks,1,1,150.0
+2024-04,Pune,Beverages,1,3,1224.0
+2024-04,Pune,Dairy & Eggs,1,5,202.5
+2024-04,Pune,Grocery,2,4,2112.0
+2024-04,Pune,Snacks,2,2,1242.75
+2024-05,Bengaluru,Beverages,1,2,960.0
+2024-05,Bengaluru,Grocery,4,13,3839.5
+2024-05,Bengaluru,Snacks,3,15,2590.0
+2024-05,Chennai,Dairy & Eggs,1,1,960.0
+2024-05,Chennai,Grocery,2,502,64710.0
+2024-05,Chennai,Snacks,1,5,675.0
+2024-05,Hyderabad,MISSING,1,1,320.0
+2024-05,MISSING,Snacks,1,5,202.5
+2024-05,Mysuru,Household,1,1,189.0
+2024-05,Pune,Dairy & Eggs,1,3,1440.0
+2024-05,Pune,Grocery,1,4,480.0
+2024-05,Pune,Snacks,1,2,240.0
+2024-06,Bengaluru,Grocery,2,6,1520.0
+2024-06,Bengaluru,Household,1,1,288.0
+2024-06,Bengaluru,Snacks,2,5,558.0
+2024-06,Chennai,Grocery,2,5,1680.0
+2024-06,Chennai,Snacks,2,5,606.0
+2024-06,Hyderabad,Dairy & Eggs,1,3,3060.0
+2024-06,Hyderabad,Grocery,1,4,1024.0
+2024-06,MISSING,Dairy & Eggs,1,3,162.0
+2024-06,Pune,Dairy & Eggs,1,1,51.0
+2024-06,Pune,Snacks,1,5,750.0
+2024-07,Bengaluru,Beverages,1,3,360.0
+2024-07,Bengaluru,Dairy & Eggs,2,6,4560.0
+2024-07,Bengaluru,Grocery,1,4,714.0
+2024-07,Bengaluru,Snacks,1,2,1920.0
+2024-07,Chennai,Snacks,1,1,120.0
+2024-07,Hyderabad,Dairy & Eggs,1,5,300.0
+2024-07,MISSING,Dairy & Eggs,1,3,960.0
+2024-07,MISSING,Grocery,1,4,840.0
+2024-07,Mysuru,Grocery,1,3,324.0
+2024-07,Mysuru,Snacks,1,1,288.0
+2024-07,Pune,Grocery,3,9,870.0
+2024-07,Pune,Snacks,1,5,240.0
+2024-08,Bengaluru,Dairy & Eggs,3,4,402.0
+2024-08,Bengaluru,Grocery,3,9,1704.0
+2024-08,Bengaluru,Household,1,2,960.0
+2024-08,Bengaluru,MISSING,1,1,288.0
+2024-08,Bengaluru,Snacks,3,9,1002.0
+2024-08,Chennai,Beverages,1,5,225.0
+2024-08,Chennai,Dairy & Eggs,1,4,798.0
+2024-08,Chennai,Grocery,2,4,2700.0
+2024-08,Chennai,Snacks,2,6,1449.0
+2024-08,Mysuru,Grocery,1,4,4800.0
+2024-08,Mysuru,Snacks,1,3,960.0
+2024-08,Pune,Beverages,2,5,2760.0
+2024-08,Pune,Grocery,1,2,300.0
+2024-09,Bengaluru,Dairy & Eggs,1,5,2400.0
+2024-09,Bengaluru,Grocery,2,8,1285.5
+2024-09,Bengaluru,Household,1,2,120.0
+2024-09,Bengaluru,Snacks,2,5,204.75
+2024-09,Chennai,Beverages,2,7,366.0
+2024-09,Chennai,Grocery,1,4,432.0
+2024-09,Chennai,Snacks,1,4,840.0
+2024-09,Hyderabad,Snacks,1,5,600.0
+2024-09,MISSING,Dairy & Eggs,1,3,288.0
+2024-09,Mysuru,Beverages,1,3,1224.0
+2024-09,Pune,Grocery,2,5,5040.0
+2024-10,Bengaluru,Grocery,1,3,135.0
+2024-10,Bengaluru,Snacks,2,7,1110.0
+2024-10,Chennai,Grocery,2,501,51038.25
+2024-10,Chennai,Snacks,3,8,1380.0
+2024-10,Hyderabad,Grocery,1,3,3060.0
+2024-10,Hyderabad,Snacks,1,3,153.0
+2024-10,MISSING,Grocery,1,3,960.0
+2024-10,MISSING,MISSING,1,1,120.0
+2024-10,Mysuru,Dairy & Eggs,1,5,2160.0
+2024-10,Mysuru,Snacks,1,3,180.0
+2024-10,Pune,Dairy & Eggs,1,4,4560.0
+2024-10,Pune,Snacks,3,11,4000.0
+2024-11,Bengaluru,Grocery,2,5,558.0
+2024-11,Bengaluru,Snacks,3,7,2518.0
+2024-11,Chennai,Dairy & Eggs,2,5,793.0
+2024-11,Chennai,Grocery,2,7,270.0
+2024-11,Chennai,Snacks,3,13,4110.0
+2024-11,MISSING,Dairy & Eggs,2,3,261.0
+2024-11,Mysuru,Grocery,1,2,420.0
+2024-11,Pune,Grocery,3,7,918.0
+2024-12,Bengaluru,Beverages,2,5,2535.0
+2024-12,Bengaluru,Dairy & Eggs,1,1,60.0
+2024-12,Bengaluru,Grocery,3,11,1642.5
+2024-12,Bengaluru,Snacks,3,506,30575.0
+2024-12,Chennai,Dairy & Eggs,1,5,202.5
+2024-12,Chennai,Grocery,3,11,7260.0
+2024-12,Chennai,Snacks,1,2,640.0
+2024-12,Hyderabad,Grocery,1,5,202.5
+2024-12,MISSING,Beverages,2,6,2001.0
+2024-12,MISSING,Grocery,1,2,108.0
+2024-12,Mysuru,Beverages,1,2,960.0
+2024-12,Mysuru,Dairy & Eggs,1,3,1440.0
+2024-12,Mysuru,Snacks,1,2,81.0
+2024-12,Pune,Beverages,1,3,1440.0
+2024-12,Pune,Grocery,2,8,2706.0
+2024-12,Pune,Snacks,2,5,615.0
+2025-01,Bengaluru,Beverages,1,2,102.0
+2025-01,Bengaluru,Dairy & Eggs,1,5,675.0
+2025-01,Bengaluru,Grocery,5,14,3249.0
+2025-01,Bengaluru,Snacks,4,11,2362.0
+2025-01,Chennai,Dairy & Eggs,1,2,300.0
+2025-01,Chennai,Snacks,3,9,2398.0
+2025-01,MISSING,Dairy & Eggs,1,2,640.0
+2025-01,MISSING,Snacks,1,4,3840.0
+2025-01,Pune,Beverages,1,5,5400.0
+2025-01,Pune,Grocery,1,4,240.0
+2025-01,Pune,Snacks,1,2,640.0
+2025-02,Bengaluru,Beverages,1,5,5100.0
+2025-02,Bengaluru,Dairy & Eggs,1,5,2400.0
+2025-02,Bengaluru,Grocery,1,2,2400.0
+2025-02,Bengaluru,Snacks,4,10,4284.0
+2025-02,Chennai,Dairy & Eggs,1,2,576.0
+2025-02,Chennai,MISSING,1,3,912.0
+2025-02,Chennai,Snacks,1,3,121.5
+2025-02,MISSING,Grocery,1,3,3240.0
+2025-02,MISSING,MISSING,1,5,1050.0
+2025-02,Mysuru,Grocery,1,5,1050.0
+2025-02,Pune,Dairy & Eggs,1,2,192.0
+2025-02,Pune,Grocery,2,5,645.0
+2025-03,Bengaluru,Beverages,1,2,120.0
+2025-03,Bengaluru,Dairy & Eggs,3,13,8070.0
+2025-03,Bengaluru,Grocery,4,14,3522.0
+2025-03,Bengaluru,Snacks,3,10,729.0
+2025-03,Chennai,Beverages,1,2,120.0
+2025-03,Chennai,Dairy & Eggs,4,12,3544.0
+2025-03,Chennai,Grocery,1,5,202.5
+2025-03,Chennai,MISSING,1,1,51.0
+2025-03,Chennai,Snacks,1,5,6000.0
+2025-03,Hyderabad,Grocery,1,1,168.0
+2025-03,Hyderabad,Household,1,2,378.0
+2025-03,Hyderabad,MISSING,1,3,960.0
+2025-03,Hyderabad,Snacks,1,3,360.0
+2025-03,MISSING,Grocery,1,2,114.0
+2025-03,MISSING,Snacks,1,3,121.5
+2025-03,Mysuru,Dairy & Eggs,1,1,150.0
+2025-03,Mysuru,Household,1,4,540.0
+2025-03,Mysuru,Snacks,1,4,480.0
+2025-03,Pune,Dairy & Eggs,1,3,960.0
+2025-03,Pune,Grocery,1,5,600.0
+2025-04,Bengaluru,Dairy & Eggs,2,9,2670.0
+2025-04,Bengaluru,Grocery,5,13,4765.5
+2025-04,Bengaluru,Snacks,3,10,1225.0
+2025-04,Chennai,Snacks,5,16,6186.0
+2025-04,Hyderabad,MISSING,1,3,960.0
+2025-04,Hyderabad,Snacks,1,2,640.0
+2025-04,MISSING,Grocery,1,1,432.0
+2025-04,Mysuru,Grocery,1,5,225.0
+2025-04,Mysuru,Snacks,1,1,120.0
+2025-04,Pune,Beverages,1,3,3240.0
+2025-04,Pune,Dairy & Eggs,2,5,1236.0
+2025-04,Pune,Grocery,2,7,638.25
+2025-04,Pune,Snacks,1,3,504.0
+2025-05,Bengaluru,Dairy & Eggs,4,15,6531.0
+2025-05,Bengaluru,Grocery,9,24,3975.0
+2025-05,Bengaluru,Snacks,3,9,900.0
+2025-05,Chennai,Dairy & Eggs,1,4,480.0
+2025-05,Chennai,Grocery,5,15,3934.0
+2025-05,Chennai,MISSING,1,4,1920.0
+2025-05,Chennai,Snacks,2,8,1177.5
+2025-05,Hyderabad,Grocery,2,7,2250.0
+2025-05,Hyderabad,MISSING,1,1,120.0
+2025-05,Hyderabad,Snacks,2,6,795.0
+2025-05,MISSING,Grocery,1,2,864.0
+2025-06,Bengaluru,Beverages,2,4,4800.0
+2025-06,Bengaluru,Dairy & Eggs,2,8,4992.0
+2025-06,Bengaluru,Grocery,2,5,3495.0
+2025-06,Bengaluru,MISSING,1,2,192.0
+2025-06,Bengaluru,Snacks,5,11,2914.0
+2025-06,Chennai,Beverages,1,2,90.0
+2025-06,Chennai,Dairy & Eggs,1,5,637.5
+2025-06,Chennai,Grocery,1,2,420.0
+2025-06,Hyderabad,Household,2,4,1184.0
+2025-06,Hyderabad,Snacks,1,5,1050.0
+2025-06,MISSING,Grocery,1,4,1152.0
+2025-06,Mysuru,Snacks,2,5,418.0
+2025-06,Pune,Snacks,2,7,1035.0
+2025-07,Bengaluru,Beverages,1,4,1920.0
+2025-07,Bengaluru,Dairy & Eggs,2,8,900.0
+2025-07,Bengaluru,Grocery,5,14,2025.0
+2025-07,Bengaluru,Snacks,3,6,1008.0
+2025-07,Chennai,Beverages,1,3,114.75
+2025-07,Chennai,Grocery,3,505,164942.5
+2025-07,Chennai,Snacks,2,8,1038.0
+2025-07,Hyderabad,Grocery,1,4,1280.0
+2025-07,Hyderabad,Household,1,2,912.0
+2025-07,MISSING,Grocery,1,3,135.0
+2025-07,MISSING,Snacks,1,1,210.0
+2025-07,Mysuru,Beverages,1,3,864.0
+2025-07,Mysuru,Household,1,3,382.5
+2025-07,Pune,Beverages,1,5,510.0
+2025-07,Pune,Grocery,2,10,7440.0
+2025-08,Bengaluru,Beverages,3,506,20595.0
+2025-08,Bengaluru,Dairy & Eggs,1,3,567.0
+2025-08,Bengaluru,Grocery,3,6,4000.0
+2025-08,Bengaluru,Snacks,4,8,3867.0
+2025-08,Chennai,Beverages,2,5,1122.0
+2025-08,Chennai,Dairy & Eggs,1,3,405.0
+2025-08,Chennai,Grocery,2,4,750.0
+2025-08,Chennai,Snacks,1,5,270.0
+2025-08,Hyderabad,Household,1,3,144.0
+2025-08,MISSING,Grocery,1,1,120.0
+2025-08,Mysuru,Dairy & Eggs,1,5,1600.0
+2025-08,Mysuru,Grocery,1,5,1600.0
+2025-08,Pune,Snacks,1,500,136000.0
+2025-09,Bengaluru,Dairy & Eggs,3,7,850.5
+2025-09,Bengaluru,Grocery,2,7,1149.0
+2025-09,Bengaluru,Household,1,3,162.0
+2025-09,Bengaluru,Snacks,6,515,155798.0
+2025-09,Chennai,Dairy & Eggs,1,1,42.75
+2025-09,Chennai,Grocery,3,9,1641.0
+2025-09,Hyderabad,Grocery,2,4,1485.0
+2025-09,MISSING,Beverages,1,5,1600.0
+2025-09,MISSING,Grocery,1,2,420.0
+2025-09,Pune,Dairy & Eggs,1,1,150.0
+2025-09,Pune,Grocery,2,7,3150.0
+2025-09,Pune,Snacks,1,4,432.0
+2025-10,Bengaluru,Beverages,1,4,1728.0
+2025-10,Bengaluru,Dairy & Eggs,6,24,5242.0
+2025-10,Bengaluru,Grocery,4,7,4192.0
+2025-10,Bengaluru,Snacks,8,22,2937.0
+2025-10,Chennai,Dairy & Eggs,3,8,3630.0
+2025-10,Chennai,Grocery,2,2,356.0
+2025-10,Chennai,Snacks,1,3,180.0
+2025-10,Hyderabad,Grocery,1,4,1216.0
+2025-10,Hyderabad,Snacks,2,4,390.0
+2025-10,MISSING,Dairy & Eggs,1,3,450.0
+2025-10,Mysuru,Beverages,1,4,4800.0
+2025-10,Mysuru,Dairy & Eggs,1,2,2400.0
+2025-10,Mysuru,Grocery,2,4,1416.0
+2025-10,Pune,Dairy & Eggs,2,8,3480.0
+2025-10,Pune,Grocery,2,9,495.0
+2025-10,Pune,MISSING,1,5,1600.0
+2025-10,Pune,Snacks,2,6,804.0
+2025-11,Bengaluru,Beverages,2,5,5184.0
+2025-11,Bengaluru,Dairy & Eggs,6,20,6309.0
+2025-11,Bengaluru,Grocery,3,9,1660.0
+2025-11,Bengaluru,Snacks,2,3,760.0
+2025-11,Chennai,Beverages,1,3,912.0
+2025-11,Chennai,Grocery,1,3,306.0
+2025-11,Chennai,Household,1,1,320.0
+2025-11,Chennai,Snacks,2,9,2832.0
+2025-11,MISSING,Snacks,1,2,120.0
+2025-11,Mysuru,Dairy & Eggs,1,4,1920.0
+2025-11,Mysuru,Grocery,1,4,480.0
+2025-11,Mysuru,Snacks,2,6,488.25
+2025-11,Pune,Grocery,1,5,1050.0
+2025-11,Pune,Snacks,1,4,4800.0
+2025-12,Bengaluru,Beverages,2,3,999.0
+2025-12,Bengaluru,Dairy & Eggs,2,3,128.25
+2025-12,Bengaluru,Grocery,4,8,828.0
+2025-12,Bengaluru,Snacks,4,10,2172.0
+2025-12,Chennai,Dairy & Eggs,1,1,210.0
+2025-12,Chennai,Grocery,5,14,3282.0
+2025-12,Chennai,Snacks,2,6,402.75
+2025-12,Hyderabad,Grocery,2,4,1280.0
+2025-12,MISSING,Grocery,1,4,3840.0
+2025-12,MISSING,Snacks,1,5,270.0
+2025-12,Mysuru,Snacks,4,511,55800.0
+2025-12,Pune,Snacks,3,14,2358.0
+2026-01,Bengaluru,Beverages,2,5,1980.0
+2026-01,Bengaluru,Grocery,2,5,4942.5
+2026-01,Bengaluru,MISSING,1,500,240000.0
+2026-01,Chennai,Beverages,2,4,1047.0
+2026-01,Chennai,Grocery,2,10,2670.0
+2026-01,Chennai,Snacks,3,11,7503.0
+2026-01,Hyderabad,Dairy & Eggs,1,4,480.0
+2026-01,Hyderabad,Grocery,1,4,180.0
+2026-01,MISSING,Beverages,1,3,960.0
+2026-01,MISSING,Dairy & Eggs,1,4,510.0
+2026-01,MISSING,Grocery,1,1,480.0
+2026-01,MISSING,Snacks,1,5,2160.0
+2026-01,Mysuru,Grocery,1,5,180.0
+2026-01,Mysuru,Household,1,2,285.0
+2026-01,Mysuru,Snacks,1,1,45.0
+2026-01,Pune,Grocery,1,2,640.0
+2026-01,Pune,Snacks,3,7,1170.0
+2026-02,Bengaluru,Dairy & Eggs,4,12,7128.0
+2026-02,Bengaluru,Grocery,2,5,217.5
+2026-02,Bengaluru,MISSING,2,5,315.0
+2026-02,Bengaluru,Snacks,5,16,15504.0
+2026-02,Chennai,Dairy & Eggs,1,5,1600.0
+2026-02,Chennai,Grocery,2,8,1780.0
+2026-02,Chennai,Household,1,1,60.0
+2026-02,Chennai,MISSING,1,3,135.0
+2026-02,Chennai,Snacks,2,8,2368.0
+2026-02,Hyderabad,Grocery,1,1,168.0
+2026-02,Hyderabad,Snacks,1,5,300.0
+2026-02,MISSING,Snacks,2,8,3885.0
+2026-02,Mysuru,Grocery,1,1,480.0
+2026-02,Mysuru,Snacks,2,6,3690.0
+2026-02,Pune,Grocery,1,500,192000.0
+2026-03,Bengaluru,Beverages,1,5,6000.0
+2026-03,Bengaluru,Dairy & Eggs,1,4,840.0
+2026-03,Bengaluru,Grocery,7,16,7162.0
+2026-03,Bengaluru,Snacks,3,9,5388.0
+2026-03,Chennai,Beverages,2,7,5250.0
+2026-03,Chennai,Dairy & Eggs,1,5,1050.0
+2026-03,Chennai,Grocery,4,11,4698.0
+2026-03,Chennai,Snacks,2,9,5952.0
+2026-03,Hyderabad,Dairy & Eggs,1,2,2040.0
+2026-03,Hyderabad,Snacks,1,3,1440.0
+2026-03,MISSING,Snacks,1,4,600.0
+2026-03,Mysuru,Dairy & Eggs,1,3,1440.0
+2026-03,Mysuru,Grocery,1,2,420.0
+2026-03,Mysuru,Snacks,1,3,405.0
+2026-03,Pune,Dairy & Eggs,1,4,1280.0
+2026-03,Pune,Grocery,1,5,5400.0
+2026-03,Pune,Snacks,1,2,90.0
+2026-04,Bengaluru,Dairy & Eggs,2,10,1725.0
+2026-04,Bengaluru,Grocery,5,15,4000.5
+2026-04,Bengaluru,Snacks,2,7,3072.0
+2026-04,Chennai,Dairy & Eggs,2,6,1070.0
+2026-04,Chennai,Grocery,5,15,3197.5
+2026-04,Chennai,Snacks,5,10,4401.0
+2026-04,Hyderabad,Grocery,2,3,570.0
+2026-04,MISSING,Dairy & Eggs,1,3,405.0
+2026-04,MISSING,Grocery,1,5,675.0
+2026-04,MISSING,Household,1,3,504.0
+2026-04,MISSING,Snacks,1,3,450.0
+2026-04,Mysuru,Dairy & Eggs,2,4,570.0
+2026-04,Mysuru,Grocery,2,5,3360.0
+2026-04,Pune,Grocery,2,6,315.0
+2026-04,Pune,Household,1,2,399.0
+2026-05,Bengaluru,Beverages,1,3,135.0
+2026-05,Bengaluru,Dairy & Eggs,5,15,4582.0
+2026-05,Bengaluru,Grocery,6,19,10923.0
+2026-05,Bengaluru,MISSING,2,6,3360.0
+2026-05,Bengaluru,Snacks,4,13,4386.0
+2026-05,Chennai,Beverages,2,6,995.0
+2026-05,Chennai,Dairy & Eggs,2,9,5850.0
+2026-05,Chennai,Grocery,1,1,210.0
+2026-05,Chennai,Household,1,5,5400.0
+2026-05,Chennai,Snacks,5,8,1550.0
+2026-05,MISSING,Beverages,1,4,480.0
+2026-05,MISSING,Dairy & Eggs,2,5,870.0
+2026-05,Mysuru,Snacks,1,4,480.0
+2026-05,Pune,Beverages,1,3,535.5
+2026-05,Pune,Grocery,2,5,1680.0
+2026-05,Pune,Snacks,1,3,630.0
+2026-06,Bengaluru,Beverages,1,5,6000.0
+2026-06,Bengaluru,Dairy & Eggs,3,8,816.0
+2026-06,Bengaluru,Grocery,1,2,85.5
+2026-06,Bengaluru,MISSING,1,2,420.0
+2026-06,Bengaluru,Snacks,2,7,1140.0
+2026-06,Chennai,Dairy & Eggs,1,5,1050.0
+2026-06,Chennai,Grocery,2,8,2120.0
+2026-06,Chennai,Snacks,2,6,1920.0
+2026-06,Hyderabad,Dairy & Eggs,2,6,621.0
+2026-06,Hyderabad,Grocery,1,3,162.0
+2026-06,Hyderabad,Snacks,1,3,1152.0
+2026-06,MISSING,Beverages,1,4,480.0
+2026-06,MISSING,Dairy & Eggs,1,1,45.0
+2026-06,MISSING,Grocery,2,4,3120.0
+2026-06,MISSING,Snacks,1,1,135.0
+2026-06,Pune,Dairy & Eggs,1,3,144.0
+2026-06,Pune,Grocery,1,3,450.0
+2026-06,Pune,Snacks,1,3,360.0
+2026-07,Bengaluru,Beverages,1,1,42.75
+2026-07,Bengaluru,Dairy & Eggs,3,11,1104.0
+2026-07,Bengaluru,Grocery,3,7,3440.0
+2026-07,Bengaluru,Household,1,3,450.0
+2026-07,Bengaluru,Snacks,2,4,348.0
+2026-07,Chennai,Dairy & Eggs,1,4,480.0
+2026-07,Chennai,Grocery,1,5,6000.0
+2026-07,Chennai,Snacks,1,3,960.0
+2026-07,Hyderabad,Dairy & Eggs,2,7,660.0
+2026-07,Hyderabad,Grocery,1,3,960.0
+2026-07,MISSING,Dairy & Eggs,1,5,540.0
+2026-07,MISSING,Grocery,2,5,780.0
+2026-07,Mysuru,Dairy & Eggs,1,500,240000.0
+2026-07,Mysuru,Grocery,2,503,243060.0
+2026-07,Pune,Beverages,2,4,1380.0
+2026-07,Pune,Grocery,2,6,1020.0
+2026-07,Pune,Snacks,1,5,6000.0
+2026-08,Bengaluru,Beverages,2,4,1362.0
+2026-08,Bengaluru,Dairy & Eggs,1,4,840.0
+2026-08,Bengaluru,Grocery,4,8,1545.0
+2026-08,Bengaluru,Snacks,3,10,2037.0
+2026-08,Chennai,Beverages,2,6,1750.0
+2026-08,Chennai,Dairy & Eggs,1,3,1440.0
+2026-08,Chennai,Grocery,4,14,2224.5
+2026-08,Chennai,Snacks,3,8,1029.0
+2026-08,Hyderabad,Dairy & Eggs,2,8,1296.0
+2026-08,Hyderabad,Grocery,3,12,2452.5
+2026-08,MISSING,Beverages,1,3,405.0
+2026-08,Mysuru,Grocery,1,1,108.0
+2026-08,Pune,Grocery,3,7,323.25
+2026-08,Pune,Snacks,1,3,630.0
+2026-09,Bengaluru,Beverages,2,6,1416.0
+2026-09,Bengaluru,Dairy & Eggs,1,2,2160.0
+2026-09,Bengaluru,Grocery,6,17,11126.5
+2026-09,Bengaluru,Household,2,7,4290.0
+2026-09,Bengaluru,Snacks,4,12,3591.0
+2026-09,Chennai,Beverages,1,5,5700.0
+2026-09,Chennai,Dairy & Eggs,1,2,255.0
+2026-09,Chennai,Snacks,1,1,40.5
+2026-09,Hyderabad,Grocery,3,7,3304.0
+2026-09,Mysuru,Dairy & Eggs,1,5,300.0
+2026-09,Mysuru,Grocery,1,3,768.0
+2026-09,Pune,Dairy & Eggs,1,5,6000.0
+2026-09,Pune,Grocery,1,5,6000.0
+2026-09,Pune,Snacks,2,6,960.0
+2026-10,Bengaluru,Dairy & Eggs,2,4,882.0
+2026-10,Bengaluru,Grocery,2,6,1344.0
+2026-10,Bengaluru,Snacks,1,4,180.0
+2026-10,Chennai,Beverages,1,4,4560.0
+2026-10,MISSING,Snacks,2,7,1908.0

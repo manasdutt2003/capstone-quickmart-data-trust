@@ -1,0 +1,15 @@
+        scope        |           measure           | row_count 
+---------------------+-----------------------------+-----------
+ duplicate order ids | repeated order_ids          |       103 
+ duplicate order ids | rows involved               |       206 
+ duplicate order ids | conflicting groups          |         0 
+ duplicate order ids | removed by D01 (keep first) |       103 
+ duplicate order ids | QC_ORD_ID_DUP rows          |       206 
+ removed copy status | Delivered                   |        34 
+ removed copy status | Cancelled                   |        30 
+ removed copy status | Pending                     |        14 
+ removed copy status | Returned                    |        10 
+ removed copy status | In Transit                  |         9 
+ removed copy status | (blank)                     |         6 
+(11 rows)
+

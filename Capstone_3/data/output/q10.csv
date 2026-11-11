@@ -1,0 +1,10 @@
+  column_name  | empty_rows | placeholder_rows | missing_rows 
+---------------+------------+------------------+--------------
+ customer_id   |          0 |                0 |            0 
+ customer_name |         20 |                0 |           20 
+ email         |         32 |               10 |           42 
+ city          |         39 |                0 |           39 
+ phone         |        109 |                0 |          109 
+ signup_date   |         11 |               14 |           25 
+(6 rows)
+

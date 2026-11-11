@@ -1,0 +1,12 @@
+      scope       |          measure           | row_count 
+------------------+----------------------------+-----------
+ customer master  | master rows (after D03)    |       499 
+ customer master  | with orders                |       479 
+ customer master  | without orders             |        20 
+ order-side ids   | distinct normalised ids    |       482 
+ order-side ids   | rows attachable to master  |      5899 
+ D03 remap        | rows under merged loser id |        14 
+ unmatched orders | unknown id rows            |       144 
+ unmatched orders | blank customer_id rows     |        60 
+(8 rows)
+

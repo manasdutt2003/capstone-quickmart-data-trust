@@ -1,0 +1,20 @@
+{
+  "customers": {
+    "file": "Resources/Capstone Questions/Capstone 2/data/customers.csv",
+    "sha256_lf": "7664b59dd98d11f903cb8203eca1e87a4c2554ca4550c54eefdc36e4a6aca548",
+    "size_lf": 35250,
+    "rows": 520
+  },
+  "products": {
+    "file": "Resources/Capstone Questions/Capstone 2/data/products.csv",
+    "sha256_lf": "4c8ec5eea500bce61e7554453d765fddd78d56ab2327f5c1cf2253f74c97138a",
+    "size_lf": 1088,
+    "rows": 30
+  },
+  "orders": {
+    "file": "Resources/Capstone Questions/Capstone 2/data/orders.csv",
+    "sha256_lf": "2f142cedfd7811ed7c295ccd9ef6e43f26f4e70d9ce10ffc86c621c540cbeb88",
+    "size_lf": 440757,
+    "rows": 6103
+  }
+}

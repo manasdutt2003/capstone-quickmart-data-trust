@@ -1,0 +1,10 @@
+{
+  "note": "self-assessed",
+  "levels": {
+    "git_cicd_delivery": 3,
+    "sql_data_modelling": 3,
+    "data_quality_validation": 3,
+    "structured_problem_solving": 3,
+    "visualisation_storytelling_docs": 3
+  }
+}

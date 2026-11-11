@@ -1,0 +1,19 @@
+ customer_id |   city    |    v     | dr 
+-------------+-----------+----------+----
+ C0057       | (unknown) |          |  1
+ C0370       | (unknown) |          |  1
+ C0130       | (unknown) |  7740.00 |  2
+ C0093       | Bangalore |          |  1
+ C0270       | Bangalore |          |  1
+ C0423       | Bangalore | 12120.00 |  2
+ C0244       | Chennai   |          |  1
+ C0095       | Chennai   |  9300.00 |  2
+ C0065       | Hyderabad |  7745.00 |  1
+ C0106       | Hyderabad |  5280.00 |  2
+ C0339       | Mysuru    |          |  1
+ C0228       | Mysuru    |  7440.00 |  2
+ C0248       | Pune      |          |  1
+ C0031       | Pune      |          |  1
+ C0054       | Pune      | 13290.00 |  2
+(15 rows)
+

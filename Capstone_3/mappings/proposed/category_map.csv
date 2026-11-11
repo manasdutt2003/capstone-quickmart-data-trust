@@ -1,0 +1,11 @@
+raw_value,standard_value,approved_by,approved_on,rationale
+,MISSING,,,Empty/missing marker; consistent with existing MISSING convention
+Beverages,Beverages,,,Canonical label
+Dairy,Dairy & Eggs,,,JUDGEMENT — labels differ by suffix only and settings served_categories recognises only 'Dairy & Eggs'; product-name evidence inconclusive (names scrambled across ALL categories: Eggs in Snacks, Dish Soap in snacks, Coffee in Household), so names can neither support nor refute; alternative is keeping Dairy separate
+Dairy & Eggs,Dairy & Eggs,,,Canonical label
+GROCERY,Grocery,,,Uppercase variant of Grocery
+Grocery,Grocery,,,Canonical label
+Household,Household,,,Canonical label
+Snacks,Snacks,,,Canonical label
+grocery,Grocery,,,Lowercase variant of Grocery
+snacks,Snacks,,,Lowercase variant of Snacks

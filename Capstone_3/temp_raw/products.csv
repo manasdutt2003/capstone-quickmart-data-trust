@@ -1,0 +1,31 @@
+product_id,product_name,category,unit_price,stock_qty
+P28,Vegetable Oil 5L,Beverages,120,-5
+P16,Biscuits Family Pack,Snacks,1200,NA
+P24,Oats 1kg,Dairy & Eggs,45,111
+P18,Salt 1kg,Snacks,210.00,108
+p09,Dish Soap 500ml,snacks,45,-5
+P-10,Atta 10kg,grocery,₹60,
+P29,Masala Papad,Beverages,45,NA
+P25,Cashew 250g,Dairy & Eggs,₹210,NA
+P13,Coconut Oil 1L,snacks,₹210,28
+P01,Basmati Rice 5kg,GROCERY ,150,26
+P05,Eggs (12),Snacks,480,NA
+P17,Sugar 1kg,Snacks,150,NA
+P06,Potato Chips 90g,Snacks,210,25
+P14,Mustard Oil 1L,GROCERY ,150,0
+P12,Salted Peanuts 200g,grocery,210,98
+P23,Tomato Ketchup 500g,GROCERY ,120,NA
+P02,Toor Dal 1kg,Grocery,150,265
+P03,Full Cream Milk 1L,Grocery,320,
+P-26,Apple Juice 1L,Dairy & Eggs,NA,289
+P04,Paneer 200g,Dairy & Eggs,120,
+P22,Toothpaste 150g,grocery,45,18
+P27,Idli Batter 1kg,GROCERY ,120,279
+P19,Mineral Water 2L,,60,132
+P-30,Honey 500g,Grocery,NA,136
+P21,Laundry Detergent 1kg,Beverages,"1,200",
+P08,Green Tea 100g,Dairy,120,NA
+P11,Curd 400g,Dairy,480,290
+P15,Ghee 500ml,Snacks,120,162
+P-20,Coffee Powder 200g,Household,120,135
+P07,Cola 750ml,Snacks,480,NA

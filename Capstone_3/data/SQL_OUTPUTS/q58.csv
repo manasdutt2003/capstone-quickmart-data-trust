@@ -1,0 +1,10 @@
+   city    | top_prod | low_prod 
+-----------+----------+----------
+ Chennai   | P23      | P12
+           | P19      | P10
+ Hyderabad | P30      | P13
+ Pune      | P02      | P11
+ Bangalore | P29      | P21
+ Mysuru    | P29      | P16
+(6 rows)
+

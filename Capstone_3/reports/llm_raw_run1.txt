@@ -1,0 +1,45 @@
+{
+  "title": "Data Analysis Report",
+  "claim": "The data shows that the average delivery days for different categories and cities vary significantly. For example, the delivery days for beverages are 3.41 days, while those for dairy and eggs are 117,920.5 days.",
+  "so_what": "Understanding the distribution of delivery days across different categories and cities.",
+  "figures": [
+    {
+      "value": 3.41,
+      "mart": "Beverages",
+      "row_key": "avg_delivery_days"
+    },
+    {
+      "value": 117,  	"mart": "Dairy & Eggs",
+      "row_key": "avg_delivery_days"
+    },
+    {
+      "value": 382,  "mart": "Grocery",
+      "row_key": "avg_delivery_days"
+    },
+    {
+      "value": 96,  "mart": "Household",
+      "row_key": "avg_delivery_days"
+    },
+    {
+      "value": 169,  "mart": "MISSING",
+      "row_key": "avg_delivery_days"
+    },
+    {
+      "value": 57,  "mart": "Snacks",
+      "row_key": "avg_delivery_days"
+    },
+    {
+      "value": 573,  "mart": "MISSING",
+      "row_key": "avg_delivery_days"
+    },
+    {
+      "value": 573,  "mart": "MISSING",
+      "row_key": "avg_delivery_days"
+    },
+    {
+      "value": 573,  "mart": "MISSING",
+      "row_key": "avg_delivery_days"
+    }
+  ],
+  "confidence": "high"
+}

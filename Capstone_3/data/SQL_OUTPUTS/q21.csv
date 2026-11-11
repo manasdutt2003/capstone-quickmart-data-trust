@@ -1,0 +1,15 @@
+   column_name   | differing_groups 
+-----------------+------------------
+ order_id        |                0 
+ customer_id     |                0 
+ product_id      |                0 
+ order_date      |                0 
+ quantity        |                0 
+ unit_price_paid |                0 
+ discount        |                0 
+ payment_mode    |                0 
+ order_status    |                0 
+ delivery_days   |                0 
+ notes           |                0 
+(11 rows)
+

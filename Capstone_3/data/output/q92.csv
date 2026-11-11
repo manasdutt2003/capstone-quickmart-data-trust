@@ -1,0 +1,5 @@
+ customer_id | customer_id | same_phone | diff_city 
+-------------+-------------+------------+-----------
+ C0196       | C0242       | f          | t
+(1 row)
+

@@ -1,0 +1,8 @@
+{
+  "lenient_trusted_orders.csv": "c981dd25586a27e00c69d59e5bd7f95ade7bf911f173190f2b4fbd7b438be593",
+  "rejected_orders.csv": "6704cc5c73e51f8a6036e39f9ce266a88c5c9aa2edc21ce3e6e0fee8ae6d0723",
+  "rule_failure_log.csv": "3008e00afefcfd4a950f839786caf433f6d69e5fb2f47b449da1e5acc03d9d46",
+  "strict_trusted_orders.csv": "a81b6fb9e0f59ec6ddeb13a386e5af990e9c3e5298bce9160576fdd9889d06a5",
+  "trusted_orders.csv": "c981dd25586a27e00c69d59e5bd7f95ade7bf911f173190f2b4fbd7b438be593",
+  "validation_datamart.csv": "bba4bd06f9c6298c1d71063c06a4ca9341ffbdb81934eefbcded9a4494444367"
+}

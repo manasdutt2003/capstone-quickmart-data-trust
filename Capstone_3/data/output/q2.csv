@@ -1,0 +1,7 @@
+    tbl    | header_columns | matched | mismatched 
+-----------+----------------+---------+------------
+ customers |              6 |       6 |          0 
+ products  |              5 |       5 |          0 
+ orders    |             11 |      11 |          0 
+(3 rows)
+

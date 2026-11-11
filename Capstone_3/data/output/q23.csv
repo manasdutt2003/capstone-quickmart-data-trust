@@ -1,0 +1,9 @@
+   scope   |            measure            | row_count 
+-----------+-------------------------------+-----------
+ customers | rows changed by normalisation |        23 
+ customers | distinct ids before           |       500 
+ customers | distinct ids after            |       500 
+ orders    | distinct raw id spellings     |       693 
+ orders    | distinct normalised ids       |       482 
+(5 rows)
+

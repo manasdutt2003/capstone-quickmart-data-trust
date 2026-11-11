@@ -1,0 +1,7 @@
+     scope     |              measure              | row_count 
+---------------+-----------------------------------+-----------
+ product names | product rows                      |        30 
+ product names | distinct names (case-insensitive) |        30 
+ product names | names on more than one row        |         0 
+(3 rows)
+

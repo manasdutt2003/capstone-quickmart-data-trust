@@ -1,0 +1,8 @@
+CREATE TABLE
+INSERT 0 2
+ boundary_pass 
+---------------
+             2
+(1 row)
+
+DROP TABLE

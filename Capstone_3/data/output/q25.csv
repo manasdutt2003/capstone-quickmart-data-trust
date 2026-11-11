@@ -1,0 +1,9 @@
+        scope        |          measure          | row_count 
+---------------------+---------------------------+-----------
+ shared-email groups | groups needing a decision |        21 
+ shared-email groups | extra rows merged         |        21 
+ excluded emails     | empty                     |        32 
+ excluded emails     | placeholder               |        10 
+ excluded emails     | total excluded            |        42 
+(5 rows)
+

@@ -1,0 +1,16 @@
+                                          QUERY PLAN                                          
+----------------------------------------------------------------------------------------------
+ HashAggregate  (cost=139.31..156.83 rows=1001 width=72)
+   Group Key: date_trunc('month'::text, (o.order_date)::timestamp with time zone), p.category
+   ->  Hash Join  (cost=40.98..131.80 rows=1001 width=45)
+         Hash Cond: (o.product_id = p.product_id)
+         ->  Hash Join  (cost=17.25..100.42 rows=1001 width=13)
+               Hash Cond: (o.customer_id = c.customer_id)
+               ->  Seq Scan on trusted_orders o  (cost=0.00..80.53 rows=1001 width=19)
+                     Filter: (order_status = 'Delivered'::text)
+               ->  Hash  (cost=11.00..11.00 rows=500 width=6)
+                     ->  Seq Scan on customers c  (cost=0.00..11.00 rows=500 width=6)
+         ->  Hash  (cost=16.10..16.10 rows=610 width=64)
+               ->  Seq Scan on products p  (cost=0.00..16.10 rows=610 width=64)
+(12 rows)
+

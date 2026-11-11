@@ -1,0 +1,10 @@
+   city    | line_value 
+-----------+------------
+ (unknown) |    4800.00
+ Bangalore |    4800.00
+ Chennai   |    4800.00
+ Hyderabad |    2400.00
+ Mysuru    |    3600.00
+ Pune      |    4800.00
+(6 rows)
+

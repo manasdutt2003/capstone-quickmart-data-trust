@@ -1,0 +1,14 @@
+   scope   |   status    |    form    | row_count 
+-----------+-------------+------------+-----------
+ customers | already ISO | -          |       108 
+ customers | changed     | DD/MM/YYYY |       194 
+ customers | changed     | DD.MM.YYYY |        82 
+ customers | changed     | DD-Mon-YY  |       111 
+ customers | unparseable | -          |        25 
+ orders    | already ISO | -          |      1151 
+ orders    | changed     | DD/MM/YYYY |      2290 
+ orders    | changed     | DD.MM.YYYY |      1237 
+ orders    | changed     | DD-Mon-YY  |      1135 
+ orders    | unparseable | -          |       290 
+(10 rows)
+

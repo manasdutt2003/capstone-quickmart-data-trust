@@ -1,0 +1,8 @@
+         check_name         | row_count 
+----------------------------+-----------
+ notes empty                |      2265 
+ notes with comma           |      2141 
+ notes with double quote    |       545 
+ notes with comma and quote |         0 
+(4 rows)
+

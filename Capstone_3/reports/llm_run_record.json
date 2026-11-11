@@ -1,0 +1,37 @@
+{
+  "model": "qwen2.5:0.5b (pending go)",
+  "model_version": "pending go",
+  "temperature": 0,
+  "seed": 42,
+  "prompt_file": "prompts/insights_prompt.txt",
+  "prompt_sha256": "1d69aff9cf7d905d6bd9958cbd0f68b0dabf7be7ea534caf458b9859453a6c9b",
+  "input_sha256": "d4f928b53e9d90b00f538e8146a3cee09d4755cc458524f848dac9b7fd1d6c33",
+  "mode": "rule-based fallback (no model run yet)",
+  "comparison": {
+    "n_first": 8,
+    "n_second": 8,
+    "figures_agreed": [
+      "799 delivered order lines clear trust",
+      "Delivered sales concentrate in one city",
+      "Delivery averages hide city gaps",
+      "Grocery dominates category mix",
+      "Payment skews to one mode",
+      "Three things the data cannot tell Neha",
+      "Top customer is worth naming in private only",
+      "Top-5 customers carry outsized value"
+    ],
+    "wording_or_set_differed": [],
+    "wording_differed": [
+      "799 delivered order lines clear trust",
+      "Delivered sales concentrate in one city",
+      "Delivery averages hide city gaps",
+      "Grocery dominates category mix",
+      "Payment skews to one mode",
+      "Three things the data cannot tell Neha",
+      "Top customer is worth naming in private only",
+      "Top-5 customers carry outsized value"
+    ]
+  },
+  "n_verified": 8,
+  "n_rejected": 0
+}

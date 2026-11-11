@@ -1,0 +1,125 @@
+rule_id,entity,loser_key,survivor_key,evidence
+D03,customer,C0218,C0218,shared email anita.gowda218@mail.com
+D03,customer,C0419,C0419,shared email arjun.das419@mail.com
+D03,customer,C0159,C0159,shared email arjun.reddy159@mail.com
+D03,customer,C0387,C0387,shared email divya.pillai387@mail.com
+D03,customer,C0128,C0128,shared email kiran.kumar128@mail.com
+D03,customer,C0175,C0175,shared email kiran.shetty175@mail.com
+D03,customer,C0119,C0119,shared email lakshmi.reddy119@mail.com
+D03,customer,C0236,C0236,shared email lakshmi.reddy236@mail.com
+D03,customer,C0351,C0351,shared email meena.pillai351@mail.com
+D03,customer,C0072,C0072,shared email meena.shetty72@mail.com
+D03,customer,C0242,C0196,shared email meenareddymail.com
+D03,customer,C0241,C0241,shared email ravi.gowda241@mail.com
+D03,customer,C0284,C0284,shared email ravi.gowda284@mail.com
+D03,customer,C0451,C0451,shared email ravi.menon451@mail.com
+D03,customer,C0413,C0413,shared email sneha.rao413@mail.com
+D03,customer,C0362,C0362,shared email suresh.das362@mail.com
+D03,customer,C0032,C0032,shared email suresh.gowda32@mail.com
+D03,customer,C0177,C0177,shared email suresh.reddy177@mail.com
+D03,customer,C0185,C0185,shared email vikram.gowda185@mail.com
+D03,customer,C0135,C0135,shared email vikram.iyer135@mail.com
+D03,customer,C0048,C0048,shared email vikram.iyer48@mail.com
+D01,order_line,O00007,first occurrence,exact row copy
+D01,order_line,O00036,first occurrence,exact row copy
+D01,order_line,O00085,first occurrence,exact row copy
+D01,order_line,O00099,first occurrence,exact row copy
+D01,order_line,O00167,first occurrence,exact row copy
+D01,order_line,O00244,first occurrence,exact row copy
+D01,order_line,O00270,first occurrence,exact row copy
+D01,order_line,O00298,first occurrence,exact row copy
+D01,order_line,O00336,first occurrence,exact row copy
+D01,order_line,O00343,first occurrence,exact row copy
+D01,order_line,O00407,first occurrence,exact row copy
+D01,order_line,O00513,first occurrence,exact row copy
+D01,order_line,O00534,first occurrence,exact row copy
+D01,order_line,O00549,first occurrence,exact row copy
+D01,order_line,O00599,first occurrence,exact row copy
+D01,order_line,O00610,first occurrence,exact row copy
+D01,order_line,O00832,first occurrence,exact row copy
+D01,order_line,O00874,first occurrence,exact row copy
+D01,order_line,O00978,first occurrence,exact row copy
+D01,order_line,O01023,first occurrence,exact row copy
+D01,order_line,O01176,first occurrence,exact row copy
+D01,order_line,O01258,first occurrence,exact row copy
+D01,order_line,O01264,first occurrence,exact row copy
+D01,order_line,O01432,first occurrence,exact row copy
+D01,order_line,O01442,first occurrence,exact row copy
+D01,order_line,O01450,first occurrence,exact row copy
+D01,order_line,O01529,first occurrence,exact row copy
+D01,order_line,O01645,first occurrence,exact row copy
+D01,order_line,O01737,first occurrence,exact row copy
+D01,order_line,O01756,first occurrence,exact row copy
+D01,order_line,O01777,first occurrence,exact row copy
+D01,order_line,O01791,first occurrence,exact row copy
+D01,order_line,O01836,first occurrence,exact row copy
+D01,order_line,O01839,first occurrence,exact row copy
+D01,order_line,O01926,first occurrence,exact row copy
+D01,order_line,O01943,first occurrence,exact row copy
+D01,order_line,O01947,first occurrence,exact row copy
+D01,order_line,O02062,first occurrence,exact row copy
+D01,order_line,O02117,first occurrence,exact row copy
+D01,order_line,O02213,first occurrence,exact row copy
+D01,order_line,O02379,first occurrence,exact row copy
+D01,order_line,O02425,first occurrence,exact row copy
+D01,order_line,O02428,first occurrence,exact row copy
+D01,order_line,O02433,first occurrence,exact row copy
+D01,order_line,O02440,first occurrence,exact row copy
+D01,order_line,O02446,first occurrence,exact row copy
+D01,order_line,O02536,first occurrence,exact row copy
+D01,order_line,O02550,first occurrence,exact row copy
+D01,order_line,O02557,first occurrence,exact row copy
+D01,order_line,O02566,first occurrence,exact row copy
+D01,order_line,O02604,first occurrence,exact row copy
+D01,order_line,O02622,first occurrence,exact row copy
+D01,order_line,O02649,first occurrence,exact row copy
+D01,order_line,O02663,first occurrence,exact row copy
+D01,order_line,O02776,first occurrence,exact row copy
+D01,order_line,O02896,first occurrence,exact row copy
+D01,order_line,O02908,first occurrence,exact row copy
+D01,order_line,O03101,first occurrence,exact row copy
+D01,order_line,O03178,first occurrence,exact row copy
+D01,order_line,O03241,first occurrence,exact row copy
+D01,order_line,O03268,first occurrence,exact row copy
+D01,order_line,O03307,first occurrence,exact row copy
+D01,order_line,O03356,first occurrence,exact row copy
+D01,order_line,O03455,first occurrence,exact row copy
+D01,order_line,O03470,first occurrence,exact row copy
+D01,order_line,O03521,first occurrence,exact row copy
+D01,order_line,O03528,first occurrence,exact row copy
+D01,order_line,O03582,first occurrence,exact row copy
+D01,order_line,O03868,first occurrence,exact row copy
+D01,order_line,O03926,first occurrence,exact row copy
+D01,order_line,O03972,first occurrence,exact row copy
+D01,order_line,O04053,first occurrence,exact row copy
+D01,order_line,O04108,first occurrence,exact row copy
+D01,order_line,O04156,first occurrence,exact row copy
+D01,order_line,O04186,first occurrence,exact row copy
+D01,order_line,O04206,first occurrence,exact row copy
+D01,order_line,O04317,first occurrence,exact row copy
+D01,order_line,O04520,first occurrence,exact row copy
+D01,order_line,O04722,first occurrence,exact row copy
+D01,order_line,O04840,first occurrence,exact row copy
+D01,order_line,O04843,first occurrence,exact row copy
+D01,order_line,O04849,first occurrence,exact row copy
+D01,order_line,O04895,first occurrence,exact row copy
+D01,order_line,O04976,first occurrence,exact row copy
+D01,order_line,O05033,first occurrence,exact row copy
+D01,order_line,O05044,first occurrence,exact row copy
+D01,order_line,O05141,first occurrence,exact row copy
+D01,order_line,O05162,first occurrence,exact row copy
+D01,order_line,O05165,first occurrence,exact row copy
+D01,order_line,O05289,first occurrence,exact row copy
+D01,order_line,O05312,first occurrence,exact row copy
+D01,order_line,O05313,first occurrence,exact row copy
+D01,order_line,O05315,first occurrence,exact row copy
+D01,order_line,O05391,first occurrence,exact row copy
+D01,order_line,O05423,first occurrence,exact row copy
+D01,order_line,O05440,first occurrence,exact row copy
+D01,order_line,O05461,first occurrence,exact row copy
+D01,order_line,O05476,first occurrence,exact row copy
+D01,order_line,O05515,first occurrence,exact row copy
+D01,order_line,O05535,first occurrence,exact row copy
+D01,order_line,O05545,first occurrence,exact row copy
+D01,order_line,O05625,first occurrence,exact row copy
+D01,order_line,O05918,first occurrence,exact row copy

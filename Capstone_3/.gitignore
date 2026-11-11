@@ -1,0 +1,31 @@
+﻿# environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.sqlfluff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# local databases (parity runs)
+*.duckdb
+*.db
+*.sqlite
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# local PostgreSQL instance used for parity runs
+.pgdata/
+.pgdata.log
+.pgsql/
+
+# determinism-test scratch output
+data_shuffled/
+charts_shuffled/
+reports_shuffled/

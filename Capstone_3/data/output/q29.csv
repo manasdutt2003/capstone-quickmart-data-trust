@@ -1,0 +1,19 @@
+       scope        |    measure     | row_count  
+--------------------+----------------+------------
+ delivered rows     | before dedup   |       1803 
+ delivered rows     | after dedup    |       1769 
+ delivered rows     | removed by D01 |         34 
+ delivered value    | before dedup   |    4542010 
+ delivered value    | after dedup    |    4524250 
+ delivered value    | removed by D01 |      17760 
+ commission         | before dedup   | 1266157.90 
+ commission         | after dedup    | 1258401.62 
+ commission         | leakage        |    7756.28 
+ reconciliation     | orders before  |       6103 
+ reconciliation     | orders after   |       6000 
+ reconciliation     | removed by D01 |        103 
+ top-3 rank changes | cities         |          0 
+ top-3 rank changes | categories     |          0 
+ top-3 rank changes | months         |          0 
+(15 rows)
+

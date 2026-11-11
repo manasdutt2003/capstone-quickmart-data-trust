@@ -1,0 +1,4 @@
+table,rows,columns,total_cells,checks_run,failed_cells,quality_score_pct
+customers,520,18,9360,6,181,98.07
+products,30,16,480,5,17,96.46
+orders,6103,28,170884,13,5472,96.8

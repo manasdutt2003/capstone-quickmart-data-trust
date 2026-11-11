@@ -1,0 +1,303 @@
+{
+  "checks": [
+    {
+      "id": 1,
+      "text": "The pipeline runs from a clean clone with one command",
+      "kind": "Gate",
+      "area": "Git, CI/CD and delivery",
+      "area_key": "git",
+      "status": "PASS",
+      "command": "python -m src.pipeline --verify-hashes",
+      "evidence": "7 outputs match reference hashes (pipeline --verify-hashes rc=0)",
+      "path": "reports/reconciliation_report.md"
+    },
+    {
+      "id": 2,
+      "text": "Extracts are committed exactly as received",
+      "kind": "Gate",
+      "area": "Data quality and validation",
+      "area_key": "dq",
+      "status": "PASS",
+      "command": "python -m src.manifest verify",
+      "evidence": "extract SHA-256 (LF-normalised) match manifest",
+      "path": "reference/extract_manifest.json"
+    },
+    {
+      "id": 3,
+      "text": "Code passes lint, type and SQL style checks",
+      "kind": "Gate",
+      "area": "Git, CI/CD and delivery",
+      "area_key": "git",
+      "status": "PASS",
+      "command": "ruff check src tests; mypy src; sqlfluff lint sql/00..08 + v_line_value --dialect postgres",
+      "evidence": "ruff + mypy + sqlfluff(core 10) zero violations",
+      "path": null
+    },
+    {
+      "id": 4,
+      "text": "Tests run on every pull request and main is protected",
+      "kind": "Gate",
+      "area": "Git, CI/CD and delivery",
+      "area_key": "git",
+      "status": "PARTIAL",
+      "command": "pytest --collect-only tests/",
+      "evidence": "398 tests collected and runnable; PR gating + main-branch protection are GitHub-side settings, not verifiable with read-only git",
+      "path": "docs/ci_workflow_proposal.yml"
+    },
+    {
+      "id": 5,
+      "text": "No secrets are committed",
+      "kind": "Gate",
+      "area": "Git, CI/CD and delivery",
+      "area_key": "git",
+      "status": "PASS",
+      "command": "git ls-files secret scan; .env ignored+untracked",
+      "evidence": "tracked files clean; .env gitignored+untracked",
+      "path": null
+    },
+    {
+      "id": 6,
+      "text": "Loading keeps every raw value",
+      "kind": "Scored",
+      "area": "Data quality and validation",
+      "area_key": "dq",
+      "status": "PASS",
+      "command": "pytest tests/test_data_loader.py",
+      "evidence": "text-preserving load fixture tests pass",
+      "path": "src/data_loader.py"
+    },
+    {
+      "id": 7,
+      "text": "Row counts reconcile from file to Q4 population",
+      "kind": "Gate",
+      "area": "Data quality and validation",
+      "area_key": "dq",
+      "status": "PASS",
+      "command": "waterfall recompute from outputs/*.csv",
+      "evidence": "raw 6103 -> clean 6000 = lenient 522 + rejected 5478; strict 115 + warnings 407",
+      "path": "docs/waterfall.md"
+    },
+    {
+      "id": 8,
+      "text": "Every column is profiled",
+      "kind": "Scored",
+      "area": "Data quality and validation",
+      "area_key": "dq",
+      "status": "PASS",
+      "command": "profile.csv missing+usable=rows per column",
+      "evidence": "22 columns profiled; missing+usable=rows all",
+      "path": "data/profile.csv"
+    },
+    {
+      "id": 9,
+      "text": "Every rule is named, counted and given a treatment",
+      "kind": "Scored",
+      "area": "Data quality and validation",
+      "area_key": "dq",
+      "status": "PASS",
+      "command": "REGISTRY x rule_failure_log FAIL counts",
+      "evidence": "12 rules named/counted/treated; 9829 FAIL + 5274 WARNING rows",
+      "path": "docs/rule_catalog.md"
+    },
+    {
+      "id": 10,
+      "text": "Duplicates and unmatched keys are counted before and after normalising",
+      "kind": "Scored",
+      "area": "Data quality and validation",
+      "area_key": "dq",
+      "status": "PASS",
+      "command": "duplicate_registry removals=103; R01/R02 FAIL rows",
+      "evidence": "dedup removals 103 logged in registry (124 rows); R01 FAIL 198, R02 FAIL 159 unmatched counted",
+      "path": "data/duplicate_registry.csv"
+    },
+    {
+      "id": 11,
+      "text": "Payment, status, city and category mappings are complete and approved",
+      "kind": "Scored",
+      "area": "Structured problem solving",
+      "area_key": "sps",
+      "status": "FAIL",
+      "command": "approved_by audit over mappings/proposed/*.csv",
+      "evidence": "40/40 mapping rows lack approved_by (human sign-off pending)",
+      "path": "mappings/proposed/"
+    },
+    {
+      "id": 12,
+      "text": "All Q4 answers use one population and one line-value definition",
+      "kind": "Gate",
+      "area": "SQL development and data modelling",
+      "area_key": "sql",
+      "status": "PASS",
+      "command": "pytest tests/test_q4_static.py",
+      "evidence": "no raw columns / no line-value redefinition in Q4",
+      "path": "src/line_value.py"
+    },
+    {
+      "id": 13,
+      "text": "Totals agree across tables",
+      "kind": "Scored",
+      "area": "SQL development and data modelling",
+      "area_key": "sql",
+      "status": "PASS",
+      "command": "sales city/category/month sums == grand",
+      "evidence": "grand 2309394.00 = city 2309394.00 = category 2309394.00 = month 2309394.00",
+      "path": "data/sales_datamart.csv"
+    },
+    {
+      "id": 14,
+      "text": "Ties, nulls and boundary values follow stated rules",
+      "kind": "Scored",
+      "area": "SQL development and data modelling",
+      "area_key": "sql",
+      "status": "PASS",
+      "command": "pytest tests/test_q4_edge_cases.py",
+      "evidence": "tie/null/boundary injection tests pass",
+      "path": null
+    },
+    {
+      "id": 15,
+      "text": "The chart is generated by code and matches its table",
+      "kind": "Scored",
+      "area": "Visualisation, storytelling and documentation",
+      "area_key": "viz",
+      "status": "PASS",
+      "command": "pytest tests/test_chart_validation.py",
+      "evidence": "chart plotted values equal its table",
+      "path": "charts/monthly_sales.png"
+    },
+    {
+      "id": 16,
+      "text": "Logic written twice gives the same result",
+      "kind": "Scored",
+      "area": "SQL development and data modelling",
+      "area_key": "sql",
+      "status": "PASS",
+      "command": "pytest tests/test_sql_python_parity.py + 4 parity suites present",
+      "evidence": "4 parity suites present; sql/python parity passes",
+      "path": "tests/test_questions_seg8_9.py"
+    },
+    {
+      "id": 17,
+      "text": "Judgement calls state the alternative and its effect",
+      "kind": "Scored",
+      "area": "Structured problem solving",
+      "area_key": "sps",
+      "status": "PASS",
+      "command": "13 calls each with Alternative + Effect",
+      "evidence": "13 judgement calls each state alternative + quantified effect",
+      "path": "docs/judgement_calls.md"
+    },
+    {
+      "id": 18,
+      "text": "The data-issues log is complete",
+      "kind": "Scored",
+      "area": "Structured problem solving",
+      "area_key": "sps",
+      "status": "PASS",
+      "command": "issue_registry extract/column/count/treatment/reason columns",
+      "evidence": "22 issue rows with extract/column/count/treatment/reason",
+      "path": "data/issue_registry.csv"
+    },
+    {
+      "id": 19,
+      "text": "The report is readable, traceable and five pages or fewer",
+      "kind": "Scored",
+      "area": "Visualisation, storytelling and documentation",
+      "area_key": "viz",
+      "status": "PASS",
+      "command": "generated_report figures + page heuristic",
+      "evidence": "3 traced figures; ~0.2 pages",
+      "path": "reports/generated_report.md"
+    },
+    {
+      "id": 20,
+      "text": "No personal data appears in any output",
+      "kind": "Gate",
+      "area": "Visualisation, storytelling and documentation",
+      "area_key": "viz",
+      "status": "PASS",
+      "command": "email/phone regex over outputs/reports/docs/dashboard",
+      "evidence": "email/phone regex clean over outputs/reports/docs/dashboard",
+      "path": "outputs/"
+    },
+    {
+      "id": 21,
+      "text": "README is complete and the walkthrough names the least-sure number",
+      "kind": "Scored",
+      "area": "Visualisation, storytelling and documentation",
+      "area_key": "viz",
+      "status": "PASS",
+      "command": "README placeholders + least-sure mention",
+      "evidence": "README complete; walkthrough names least-sure number",
+      "path": "README.md"
+    },
+    {
+      "id": 22,
+      "text": "Datamarts are built from trusted orders and reconcile to them",
+      "kind": "Scored",
+      "area": "SQL development and data modelling",
+      "area_key": "sql",
+      "status": "PARTIAL",
+      "command": "mart totals == trusted delivered by month/city/category; refresh helper",
+      "evidence": "sales/customer_value reconcile to delivered (2,309,394.00); payment to all-status (7,983,286.25); delivery to valid-day delivered with impossible set aside; refresh helper src/refresh.py absent",
+      "path": "data/sales_datamart.csv"
+    },
+    {
+      "id": 23,
+      "text": "The LLM report is grounded in the datamarts and receives no personal data",
+      "kind": "Gate",
+      "area": "Visualisation, storytelling and documentation",
+      "area_key": "viz",
+      "status": "PASS",
+      "command": "aggregated-only input + figure verifier + run record",
+      "evidence": "input aggregated-only + PII-clean; figures verified; model=qwen2.5:0.5b (pending go)",
+      "path": "reports/llm_run_record.json"
+    }
+  ],
+  "validations": [
+    {
+      "name": "waterfall_reconcile",
+      "status": "PASS",
+      "evidence": "raw 6103 -> clean 6000 = lenient 522 + rejected 5478; strict 115 + warnings 407"
+    },
+    {
+      "name": "manifest_extracts",
+      "status": "PASS",
+      "evidence": "extract SHA-256 (LF-normalised) match manifest"
+    },
+    {
+      "name": "output_hashes",
+      "status": "PASS",
+      "evidence": "7 outputs match reference hashes (pipeline --verify-hashes rc=0)"
+    },
+    {
+      "name": "parity_sample",
+      "status": "PASS",
+      "evidence": "4 parity suites present; sql/python parity passes"
+    },
+    {
+      "name": "pii_scan",
+      "status": "PASS",
+      "evidence": "email/phone regex clean over outputs/reports/docs/dashboard"
+    }
+  ],
+  "rubric": {
+    "levels": {
+      "git_cicd_delivery": 3,
+      "sql_data_modelling": 3,
+      "data_quality_validation": 3,
+      "structured_problem_solving": 3,
+      "visualisation_storytelling_docs": 3
+    },
+    "weights": {
+      "git": 15,
+      "sql": 25,
+      "dq": 25,
+      "sps": 15,
+      "viz": 20
+    },
+    "score": 75.0,
+    "note": "self-assessed"
+  },
+  "run_hash": "d8b7d7bff368eb6c71dceacac95af2ccd6e2abb82c197be4058c5fbff3f084bf"
+}

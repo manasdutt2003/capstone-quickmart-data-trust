@@ -1,0 +1,168 @@
+{
+  "insights": [
+    {
+      "title": "Delivered sales concentrate in one city",
+      "claim": "Bengaluru drives Rs 737,658.25 of Rs 2,309,394.00 delivered sales.",
+      "so_what": "Protect availability and delivery SLA there first.",
+      "figures": [
+        {
+          "value": 737658.25,
+          "mart": "sales_datamart",
+          "row_key": "city=Bengaluru"
+        },
+        {
+          "value": 2309394.0,
+          "mart": "sales_datamart",
+          "row_key": "grand_total"
+        }
+      ],
+      "confidence": "high",
+      "source": "rule-based",
+      "status": "VERIFIED",
+      "reason": "all figures match mart values within 0.01"
+    },
+    {
+      "title": "Grocery dominates category mix",
+      "claim": "Grocery is Rs 960,025.25; next categories trail far behind.",
+      "so_what": "Assortment and stock bets belong in Grocery.",
+      "figures": [
+        {
+          "value": 960025.25,
+          "mart": "sales_datamart",
+          "row_key": "category=Grocery"
+        }
+      ],
+      "confidence": "high",
+      "source": "rule-based",
+      "status": "VERIFIED",
+      "reason": "all figures match mart values within 0.01"
+    },
+    {
+      "title": "Top-5 customers carry outsized value",
+      "claim": "Five customers concentrate value led by a top account at Rs 244,965.00; the top of the book dominates.",
+      "so_what": "Retention risk concentrates in a handful of accounts.",
+      "figures": [
+        {
+          "value": 244965.0,
+          "mart": "customer_value_datamart",
+          "row_key": "top1_value"
+        },
+        {
+          "value": 2309394.0,
+          "mart": "sales_datamart",
+          "row_key": "grand_total"
+        }
+      ],
+      "confidence": "high",
+      "source": "rule-based",
+      "status": "VERIFIED",
+      "reason": "all figures match mart values within 0.01"
+    },
+    {
+      "title": "Top customer is worth naming in private only",
+      "claim": "Highest-value customer contributes Rs 244,965.00.",
+      "so_what": "Mask ids in every shared output (first char + ***).",
+      "figures": [
+        {
+          "value": 244965.0,
+          "mart": "customer_value_datamart",
+          "row_key": "top1_value"
+        }
+      ],
+      "confidence": "high",
+      "source": "rule-based",
+      "status": "VERIFIED",
+      "reason": "all figures match mart values within 0.01"
+    },
+    {
+      "title": "Payment skews to one mode",
+      "claim": "COD carries Rs 1,736,771.00 of delivered value.",
+      "so_what": "Reconciliation and fraud controls follow the skew.",
+      "figures": [
+        {
+          "value": 1736771.0,
+          "mart": "payment_datamart",
+          "row_key": "payment=COD"
+        }
+      ],
+      "confidence": "medium",
+      "source": "rule-based",
+      "status": "VERIFIED",
+      "reason": "all figures match mart values within 0.01"
+    },
+    {
+      "title": "Delivery averages hide city gaps",
+      "claim": "Mean delivery time is 3.41 days, but city medians spread around it.",
+      "so_what": "Set SLA targets per city, not one global number.",
+      "figures": [
+        {
+          "value": 3.41,
+          "mart": "delivery_datamart",
+          "row_key": "mean_avg_days"
+        }
+      ],
+      "confidence": "medium",
+      "source": "rule-based",
+      "status": "VERIFIED",
+      "reason": "all figures match mart values within 0.01"
+    },
+    {
+      "title": "799 delivered order lines clear trust",
+      "claim": "799 delivered lines reconcile across city, category and month cuts.",
+      "so_what": "Leadership can quote one number three ways.",
+      "figures": [
+        {
+          "value": 799.0,
+          "mart": "sales_datamart",
+          "row_key": "grand_orders"
+        }
+      ],
+      "confidence": "high",
+      "source": "rule-based",
+      "status": "VERIFIED",
+      "reason": "all figures match mart values within 0.01"
+    },
+    {
+      "title": "Three things the data cannot tell Neha",
+      "claim": "Stock availability, true delivery promises, and ghost customer identity stay unanswerable.",
+      "so_what": "Do not plan stock, promise SLAs, or target ghosts.",
+      "figures": [
+        {
+          "value": 799.0,
+          "mart": "sales_datamart",
+          "row_key": "grand_orders"
+        }
+      ],
+      "confidence": "high",
+      "source": "rule-based",
+      "status": "VERIFIED",
+      "reason": "all figures match mart values within 0.01"
+    }
+  ],
+  "rejected": [],
+  "comparison": {
+    "n_first": 8,
+    "n_second": 8,
+    "figures_agreed": [
+      "799 delivered order lines clear trust",
+      "Delivered sales concentrate in one city",
+      "Delivery averages hide city gaps",
+      "Grocery dominates category mix",
+      "Payment skews to one mode",
+      "Three things the data cannot tell Neha",
+      "Top customer is worth naming in private only",
+      "Top-5 customers carry outsized value"
+    ],
+    "wording_or_set_differed": [],
+    "wording_differed": [
+      "799 delivered order lines clear trust",
+      "Delivered sales concentrate in one city",
+      "Delivery averages hide city gaps",
+      "Grocery dominates category mix",
+      "Payment skews to one mode",
+      "Three things the data cannot tell Neha",
+      "Top customer is worth naming in private only",
+      "Top-5 customers carry outsized value"
+    ]
+  }
+}

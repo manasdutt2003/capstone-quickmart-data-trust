@@ -1,0 +1,23 @@
+   scope   |   column_name   |            variant             | row_count 
+-----------+-----------------+--------------------------------+-----------
+ customers | raw_customer_id | trailing space                 |         8 
+ customers | raw_customer_id | lower case                     |        19 
+ customers | raw_customer_id | contains dash                  |         4 
+ customers | raw_customer_id | rewritten by norm_id           |        31 
+ customers | customer_id     | rewritten by norm_id           |        23 
+ customers | raw_customer_id | distinct spellings             |       500 
+ customers | raw_customer_id | distinct ids after norm_id     |       500 
+ orders    | raw_customer_id | trailing space                 |        94 
+ orders    | raw_customer_id | lower case                     |       476 
+ orders    | raw_customer_id | contains dash                  |        38 
+ orders    | raw_customer_id | rewritten by norm_id           |       606 
+ orders    | raw_customer_id | distinct spellings             |       693 
+ orders    | raw_customer_id | distinct ids after norm_id     |       482 
+ orders    | raw_product_id  | single-dash form (P-21)        |      1019 
+ orders    | raw_product_id  | doubled-dash form (P--10)      |        38 
+ orders    | raw_product_id  | lower case                     |       178 
+ orders    | raw_product_id  | rewritten by norm_id           |      1235 
+ orders    | order_id        | variant rows (space/case/dash) |         0 
+ orders    | order_id        | leading-zero form O0####       |      6103 
+(19 rows)
+

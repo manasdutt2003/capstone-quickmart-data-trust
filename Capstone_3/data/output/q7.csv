@@ -1,0 +1,7 @@
+   scope   | rows_with_non_ascii | rupee_chars 
+-----------+---------------------+-------------
+ customers |                   0 |           0 
+ products  |                   3 |           3 
+ orders    |                 125 |         125 
+(3 rows)
+

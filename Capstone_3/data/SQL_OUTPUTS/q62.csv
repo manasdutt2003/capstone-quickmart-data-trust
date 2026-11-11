@@ -1,0 +1,10 @@
+   city    | med_pct 
+-----------+---------
+ Bangalore |       4
+ Chennai   |       4
+ Hyderabad |       4
+ Mysuru    |       3
+ Pune      |       3
+           |       3
+(6 rows)
+

@@ -1,0 +1,59 @@
+   city    |   category   |     v     | g 
+-----------+--------------+-----------+---
+ (unknown) | (unknown)    | 864150.00 | 3
+ (unknown) | (unknown)    |   8070.00 | 0
+ Chennai   | Dairy & Eggs |  14755.00 | 0
+ Hyderabad | Household    |   2180.00 | 0
+ (unknown) | Snacks       |  29420.00 | 0
+ Hyderabad | Dairy & Eggs |   9870.00 | 0
+ Bangalore | (unknown)    |   7535.00 | 0
+ Pune      | Dairy & Eggs |  16780.00 | 0
+ Chennai   | Snacks       |  55905.00 | 0
+ Mysuru    | Snacks       |  13670.00 | 0
+ Hyderabad | Dairy        |   1740.00 | 0
+ Hyderabad | (unknown)    |   2030.00 | 0
+ Bangalore | Beverages    |  39325.00 | 0
+ (unknown) | Dairy        |   3260.00 | 0
+ Mysuru    | Grocery      |  23435.00 | 0
+ Pune      | (unknown)    |   9680.00 | 0
+ Pune      | Snacks       |  41660.00 | 0
+ Pune      | Household    |   1380.00 | 0
+ Hyderabad | Snacks       |  13000.00 | 0
+ Mysuru    | Beverages    |  11660.00 | 0
+ (unknown) | Beverages    |   3200.00 | 0
+ Mysuru    | Dairy & Eggs |  10640.00 | 0
+ Mysuru    | Household    |   1560.00 | 0
+ Chennai   | Beverages    |  27080.00 | 0
+ (unknown) | Grocery      |  23150.00 | 0
+ Mysuru    | Dairy        |   4275.00 | 0
+ Chennai   | Household    |  10505.00 | 0
+ Chennai   | Grocery      |  68260.00 | 0
+ Bangalore | Household    |   7640.00 | 0
+ Hyderabad | Grocery      |  35805.00 | 0
+ Bangalore | Dairy        |  30875.00 | 0
+ Chennai   | (unknown)    |   2355.00 | 0
+ Bangalore | Snacks       |  85670.00 | 0
+ Hyderabad | Beverages    |   2485.00 | 0
+ Pune      | Dairy        |  10070.00 | 0
+ Pune      | Beverages    |  18345.00 | 0
+ Pune      | Grocery      |  50200.00 | 0
+ (unknown) | Dairy & Eggs |   2845.00 | 0
+ Bangalore | Grocery      | 103355.00 | 0
+ Chennai   | Dairy        |  13190.00 | 0
+ (unknown) | Household    |    630.00 | 0
+ Bangalore | Dairy & Eggs |  46660.00 | 0
+ (unknown) | (unknown)    |  70575.00 | 1
+ Bangalore | (unknown)    | 321060.00 | 1
+ Chennai   | (unknown)    | 192050.00 | 1
+ Pune      | (unknown)    | 148115.00 | 1
+ Mysuru    | (unknown)    |  65240.00 | 1
+ Hyderabad | (unknown)    |  67110.00 | 1
+ (unknown) | (unknown)    |  29670.00 | 2
+ (unknown) | Dairy        |  63410.00 | 2
+ (unknown) | Snacks       | 239325.00 | 2
+ (unknown) | Grocery      | 304205.00 | 2
+ (unknown) | Dairy & Eggs | 101550.00 | 2
+ (unknown) | Beverages    | 102095.00 | 2
+ (unknown) | Household    |  23895.00 | 2
+(55 rows)
+

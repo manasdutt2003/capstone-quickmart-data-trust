@@ -1,0 +1,108 @@
+# PROPOSAL ONLY — apply manually to .github/workflows/manas-dutt-quickmart-tests.yml
+# The assistant must not edit .github/. Replace the CI job body with the steps
+# below (trigger/paths block unchanged). Python 3.11 matches local CI parity.
+
+name: manas-dutt-quickmart-tests
+# Scope: Manas Dutt's QuickMart files ONLY. Path filters guarantee no other
+# contributor's files trigger or are touched by this workflow.
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "Projects/Individual/Manas Dutt/Week 3/QuickMart/**"
+      - ".github/workflows/manas-dutt-quickmart-tests.yml"
+  push:
+    branches: [main]
+    paths:
+      - "Projects/Individual/Manas Dutt/Week 3/QuickMart/**"
+      - ".github/workflows/manas-dutt-quickmart-tests.yml"
+  workflow_dispatch:
+
+jobs:
+  quickmart-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Projects/Individual/Manas Dutt/Week 3/QuickMart
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: quickmart
+          POSTGRES_HOST_AUTH_METHOD: trust
+        ports:
+          - 5433:5432
+        options: >-
+          --health-cmd="pg_isready -U postgres"
+          --health-interval=5s
+          --health-timeout=5s
+          --health-retries=10
+    env:
+      CI: "true"
+      DATABASE_URL: postgresql://postgres@127.0.0.1:5433/quickmart
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare source data for tests
+        run: |
+          mkdir -p "${{ github.workspace }}/Resources/Capstone Questions/Capstone 2/data"
+          cp -r "${{ github.workspace }}/Resources/Capstone Questions/Capstone 2/data"/* "${{ github.workspace }}/Resources/Capstone Questions/Capstone 2/data/" 2>/dev/null || true
+          # Also ensure the data files exist in the QuickMart data folder
+          ls -la "${{ github.workspace }}/Resources/Capstone Questions/Capstone 2/data/"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run full pipeline (regenerates data/, reports/, charts/)
+        run: python -m src.pipeline
+
+      - name: Extract manifest verify (criterion 2, LF-normalised)
+        run: python -m src.manifest verify
+
+      - name: Output hashes verify (criterion 1, determinism)
+        run: python -m src.pipeline --verify-hashes
+
+      - name: Full pytest
+        run: python -m pytest tests/ -q --tb=short
+
+      - name: Ruff
+        run: ruff check src tests
+
+      - name: Mypy
+        run: mypy src
+
+      - name: SQLFluff (postgres)
+        run: sqlfluff lint sql/00_staging.sql sql/01_profile_views.sql sql/02_quality_scorecard.sql sql/03_dedup.sql sql/04_trusted_orders.sql sql/05_marts.sql sql/06_segment6_9_answers.sql sql/07_trusted_populations.sql sql/08_rule_views.sql sql/v_line_value.sql --dialect postgres
+
+      - name: PII scan over outputs/ and docs/
+        run: |
+          python - <<'EOF'
+          import re, sys
+          from pathlib import Path
+          email = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+          phone = re.compile(r"(?<!\d)(\+?91[\s\-]?)?[6-9]\d{9}(?!\d)")
+          bad = []
+          for base in ("outputs", "docs"):
+              for p in sorted(Path(base).rglob("*")):
+                  if not p.is_file() or p.suffix not in (".csv", ".md", ".txt", ".json"):
+                      continue
+                  text = p.read_text(encoding="utf-8", errors="replace")
+                  text = re.sub(r"[a-f0-9]{64}", "", text)
+                  if email.search(text) or phone.search(text):
+                      bad.append(str(p))
+          if bad:
+              print("PII found in:", *bad, sep="\n  ")
+              sys.exit(1)
+          print("PII scan: clean")
+          EOF
+
+      - name: Secret scan (no external action)
+        run: |
+          git diff origin/main...HEAD -p -- "Projects/Individual/Manas Dutt" ".github/workflows/manas-dutt-quickmart-tests.yml" | grep -nEi "aws_secret|aws_access|BEGIN (RSA )?PRIVATE KEY|ghp_[A-Za-z0-9]{36}" && { echo "Possible secret found"; exit 1; } || echo "No secrets found"

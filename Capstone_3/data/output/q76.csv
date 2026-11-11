@@ -1,0 +1,36 @@
+ customer_id | payment_mode 
+-------------+--------------
+ C0001       | COD
+ C0002       | Debit Card
+ C0003       | UPI
+ C0004       | Credit Card
+ C0005       | Debit Card
+(5 rows)
+
+ customer_id | payment_mode 
+-------------+--------------
+ C0001       | COD
+ C0002       | Debit Card
+ C0003       | UPI
+ C0004       | Credit Card
+ C0005       | Debit Card
+(5 rows)
+
+ customer_id | payment_mode 
+-------------+--------------
+ C0001       | COD
+ C0002       | Debit Card
+ C0003       | UPI
+ C0004       | Credit Card
+ C0005       | Debit Card
+(5 rows)
+
+ customer_id | count 
+-------------+-------
+ C0236       |     2
+ C0372       |     2
+ C0054       |     2
+ C0037       |     2
+ C0295       |     2
+(5 rows)
+

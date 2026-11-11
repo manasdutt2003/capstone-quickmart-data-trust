@@ -1,0 +1,11 @@
+raw_value,standard_value,approved_by,approved_on,rationale
+,MISSING,,,Empty/missing marker; consistent with existing MISSING convention
+Cash on delivery,COD,,,Full phrase of COD; same method
+COD,COD,,,Canonical code
+Credit card,Credit Card,,,Case variant of canonical label
+Debit Card,Debit Card,,,Canonical label
+NetBanking,NetBanking,,,Canonical label
+UPI,UPI,,,Canonical code
+cc,Credit Card,,,Lowercase code for Credit Card
+cod,COD,,,Lowercase code for COD
+upi,UPI,,,Lowercase code for UPI

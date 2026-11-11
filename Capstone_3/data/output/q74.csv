@@ -1,0 +1,9 @@
+ order_status | count |     pattern     
+--------------+-------+-----------------
+ Delivered    |  1001 | valid-singleton
+ Returned     |   339 | valid-singleton
+ Cancelled    |  1014 | valid-singleton
+ Pending      |   338 | valid-singleton
+ In Transit   |   310 | valid-singleton
+(5 rows)
+

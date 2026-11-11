@@ -1,0 +1,11 @@
+raw_value,standard_value,approved_by
+Delivered,Delivered,Neha
+delivered,Delivered,Neha
+Delivered ,Delivered,Neha
+CANCELLED,Cancelled,Neha
+cancelled,Cancelled,Neha
+Cancelled,Cancelled,Neha
+Returned,Returned,Neha
+In transit,In Transit,Neha
+Pending?,Pending,Neha
+,MISSING,Neha

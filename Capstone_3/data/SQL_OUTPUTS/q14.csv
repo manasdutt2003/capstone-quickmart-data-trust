@@ -1,0 +1,9 @@
+        email_class         | row_count 
+----------------------------+-----------
+ empty                      |        32 
+ placeholder                |        10 
+ malformed                  |        15 
+ flagged (QC email invalid) |        57 
+ usable                     |       463 
+(5 rows)
+

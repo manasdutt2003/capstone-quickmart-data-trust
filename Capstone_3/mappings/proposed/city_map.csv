@@ -1,0 +1,12 @@
+raw_value,standard_value,approved_by,approved_on,rationale
+,MISSING,,,Empty/missing marker; consistent with existing MISSING convention
+BLR,Bengaluru,,,Common code for Bengaluru
+Bangalore,Bengaluru,,,Former name of Bengaluru
+Bengaluru,Bengaluru,,,Canonical served city
+Chennai,Chennai,,,Canonical served city
+Hyderabad,Hyderabad,,,Canonical served city
+Madras,Chennai,,,Former name of Chennai
+Mysuru,Mysuru,,,Real city but OUTSIDE the four served cities; kept as own visible group so Q48 stays answerable; JUDGEMENT — alternative is UNMAPPED_CITY
+Pune,Pune,,,Canonical served city
+bengaluru,Bengaluru,,,Lowercase variant of Bengaluru
+chennai,Chennai,,,Lowercase variant of Chennai

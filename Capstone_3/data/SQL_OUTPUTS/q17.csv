@@ -1,0 +1,11 @@
+     status     | empty_rows | total_rows | empty_pct 
+----------------+------------+------------+-----------
+ (all statuses) |        142 |       6103 |      2.33 
+ Delivered      |         39 |       1803 |      2.16 
+ Cancelled      |         37 |       1828 |      2.02 
+ In Transit     |         18 |        602 |      2.99 
+ Pending        |         24 |        623 |      3.85 
+ Returned       |         13 |        618 |      2.10 
+ (blank)        |         11 |        629 |      1.75 
+(7 rows)
+

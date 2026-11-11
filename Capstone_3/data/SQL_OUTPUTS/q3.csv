@@ -1,0 +1,36 @@
+  scope   | column_name | value_form | row_count 
+----------+-------------+------------+-----------
+ orders   | quantity    | 1          |      1094 
+ orders   | quantity    | 3          |      1092 
+ orders   | quantity    | 2          |      1089 
+ orders   | quantity    | 4          |      1071 
+ orders   | quantity    | 5          |      1029 
+ orders   | quantity    | 0          |       251 
+ orders   | quantity    | (blank)    |       170 
+ orders   | quantity    | -2         |       111 
+ orders   | quantity    | 500        |        77 
+ orders   | quantity    | 2.5        |        62 
+ orders   | quantity    | three      |        57 
+ orders   | discount    | 0          |      2271 
+ orders   | discount    | NA         |       576 
+ orders   | discount    | 5%         |       557 
+ orders   | discount    | (blank)    |       551 
+ orders   | discount    | 15         |       549 
+ orders   | discount    | 20 percent |       539 
+ orders   | discount    | 10%        |       531 
+ orders   | discount    | 0.1        |       529 
+ products | unit_price  | 120        |         7 
+ products | unit_price  | 150        |         4 
+ products | unit_price  | 45         |         4 
+ products | unit_price  | 480        |         3 
+ products | unit_price  | ₹210       |         2 
+ products | unit_price  | 210        |         2 
+ products | unit_price  | NA         |         2 
+ products | unit_price  | ₹60        |         1 
+ products | unit_price  | 1,200      |         1 
+ products | unit_price  | 1200       |         1 
+ products | unit_price  | 210.00     |         1 
+ products | unit_price  | 320        |         1 
+ products | unit_price  | 60         |         1 
+(32 rows)
+

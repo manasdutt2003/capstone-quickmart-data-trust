@@ -1,0 +1,7 @@
+   scope   | rows_loaded 
+-----------+-------------
+ customers |         520 
+ products  |          30 
+ orders    |        6103 
+(3 rows)
+

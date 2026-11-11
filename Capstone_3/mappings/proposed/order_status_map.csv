@@ -1,0 +1,10 @@
+raw_value,standard_value,approved_by,approved_on,rationale
+,MISSING,,,Empty/missing marker; consistent with existing MISSING convention
+CANCELLED,Cancelled,,,Uppercase variant of Cancelled
+Cancelled,Cancelled,,,Canonical label
+Delivered,Delivered,,,Canonical label; completed sale
+In transit,In Transit,,,Canonical label (spacing variant of In Transit)
+Pending?,Pending,,,Trailing ? reads as data-entry uncertainty, not a distinct status; JUDGEMENT — alternative is UNMAPPED_STATUS
+Returned,Returned,,,Canonical label; shipped then returned — NOT a completed sale and NOT Cancelled; JUDGEMENT — see brief Q41
+cancelled,Cancelled,,,Lowercase variant of Cancelled
+delivered,Delivered,,,Lowercase variant of Delivered; completed sale

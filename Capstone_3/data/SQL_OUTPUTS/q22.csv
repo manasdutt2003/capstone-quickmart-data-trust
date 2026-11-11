@@ -1,0 +1,10 @@
+      scope       |         measure         | row_count 
+------------------+-------------------------+-----------
+ D03 email merges | same-id repeat merges   |        20 
+ D03 email merges | cross-id merges         |         1 
+ D03 email merges | merged rows (losers)    |        21 
+ D03 email merges | merge groups            |        21 
+ customer master  | customers before        |       520 
+ customer master  | master rows (after D03) |       499 
+(6 rows)
+

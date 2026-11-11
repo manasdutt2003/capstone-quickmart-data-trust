@@ -1,0 +1,15 @@
+   column_name   | empty_rows | placeholder_rows | missing_rows | months_with_missing | worst_month | worst_month_rows | worst_share_pct 
+-----------------+------------+------------------+--------------+---------------------+-------------+------------------+-----------------
+ order_id        |          0 |                0 |            0 |                   0 |             |                0 |                 
+ customer_id     |         60 |                0 |           60 |                  33 |     2025-05 |                5 |             8.3 
+ product_id      |         54 |                0 |           54 |                  29 |     2025-06 |                5 |             9.3 
+ order_date      |        180 |              110 |          290 |                   0 |             |                0 |                 
+ quantity        |        170 |                0 |          170 |                  44 |   (no date) |               10 |             5.9 
+ unit_price_paid |        199 |               68 |          267 |                  49 |     2024-11 |               12 |             4.5 
+ discount        |        551 |              576 |         1127 |                  62 |   (no date) |               60 |             5.3 
+ payment_mode    |        564 |                0 |          564 |                  53 |   (no date) |               28 |             5.0 
+ order_status    |        629 |                0 |          629 |                  52 |     2026-03 |               32 |             5.1 
+ delivery_days   |        142 |                0 |          142 |                  40 |     2026-03 |                9 |             6.3 
+ notes           |       2265 |                0 |         2265 |                  76 |   (no date) |               99 |             4.4 
+(11 rows)
+

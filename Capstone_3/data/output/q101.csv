@@ -1,0 +1,5 @@
+ payment_mode | order_status | mean_d | n  
+--------------+--------------+--------+----
+ Debit Card   | In Transit   |   4.21 | 29
+(1 row)
+

@@ -1,0 +1,7 @@
+status_std,orders_before,commission_before,orders_after,commission_after,commission_leakage,orders_removed
+Cancelled,1828,434261.14,1798,430101.58,4159.56,30
+Delivered,1803,343110.74,1769,341769.7,1341.04,34
+In Transit,602,202043.04,593,201828.6,214.44,9
+MISSING,629,127015.74,623,126602.82,412.92,6
+Pending,623,54295.26,609,53146.14,1149.12,14
+Returned,618,109504.86,608,108992.06,512.8,10

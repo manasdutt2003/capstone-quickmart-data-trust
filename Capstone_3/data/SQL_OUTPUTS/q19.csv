@@ -1,0 +1,12 @@
+   category   | total_products | usable | unusable | missing_rows | bad_rows 
+--------------+----------------+--------+----------+--------------+----------
+ Grocery      |             10 |      7 |        3 |            3 |        0 
+ Snacks       |              9 |      4 |        5 |            4 |        1 
+ Dairy & Eggs |              4 |      2 |        2 |            2 |        0 
+ Beverages    |              3 |      0 |        3 |            2 |        1 
+ Dairy        |              2 |      1 |        1 |            1 |        0 
+ (blank)      |              1 |      1 |        0 |            0 |        0 
+ Household    |              1 |      1 |        0 |            0 |        0 
+ all products |             30 |     16 |       14 |           12 |        2 
+(8 rows)
+

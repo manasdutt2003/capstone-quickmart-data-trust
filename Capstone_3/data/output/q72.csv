@@ -1,0 +1,24 @@
+ order_id |             violated              
+----------+-----------------------------------
+ O00002   | C3_future,C4_qty
+ O00006   | C3_future,C4_qty
+ O00007   | C3_future,C3_future,C4_qty,C4_qty
+ O00009   | C3_future,C4_qty
+ O00010   | C4_qty
+ O00014   | C3_future,C4_qty
+ O00020   | C4_qty
+ O00024   | C3_future
+ O00029   | C3_future,C4_qty
+ O00033   | C4_qty
+ O00035   | C4_qty
+ O00036   | C4_qty,C4_qty
+ O00037   | C3_future,C4_qty
+ O00039   | C3_future,C4_qty
+ O00040   | C4_qty
+ O00041   | C3_future,C4_qty
+ O00043   | C3_future,C4_qty
+ O00044   | C3_future,C4_qty
+ O00047   | C3_future,C4_qty
+ O00048   | C4_qty
+(20 rows)
+

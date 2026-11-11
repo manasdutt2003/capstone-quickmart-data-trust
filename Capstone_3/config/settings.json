@@ -1,0 +1,17 @@
+{
+  "today": "2026-10-11",
+  "raw_dir": "Resources/Capstone Questions/Capstone 2/data",
+  "commission_rate": 0.08,
+  "completed_status": "Delivered",
+  "high_value_threshold": 10000,
+  "qty_min": 1,
+  "qty_max": 100,
+  "qty_bulk_flag": 20,
+  "delivery_min": 0,
+  "delivery_max": 30,
+  "price_tolerance": 0.30,
+  "far_price_threshold": 0.20,
+  "placeholders": ["NA", "N/A", "na", "n/a", "-", "--", "unknown", "UNKNOWN", "Unknown", "null", "NULL", "None", "?"],
+  "served_cities": ["Bengaluru", "Chennai", "Hyderabad", "Pune"],
+  "served_categories": ["Grocery", "Snacks", "Dairy & Eggs", "Beverages", "Household"]
+}

@@ -1,0 +1,21 @@
+ scope  |      name       | missing_rows | total_rows | share_pct 
+--------+-----------------+--------------+------------+-----------
+ column | notes           |         2265 |       6103 |     37.11 
+ column | discount        |         1127 |       6103 |     18.47 
+ column | order_status    |          629 |       6103 |     10.31 
+ column | payment_mode    |          564 |       6103 |      9.24 
+ column | order_date      |          290 |       6103 |      4.75 
+ column | unit_price_paid |          267 |       6103 |      4.37 
+ column | quantity        |          170 |       6103 |      2.79 
+ column | delivery_days   |          142 |       6103 |      2.33 
+ column | customer_id     |           60 |       6103 |      0.98 
+ column | product_id      |           54 |       6103 |      0.88 
+ column | order_id        |            0 |       6103 |      0.00 
+ status | Delivered       |          655 |       1803 |      36.3 
+ status | Cancelled       |          709 |       1828 |      38.8 
+ status | In Transit      |          223 |        602 |      37.0 
+ status | Pending         |          237 |        623 |      38.0 
+ status | Returned        |          220 |        618 |      35.6 
+ status | (blank)         |          221 |        629 |      35.1 
+(17 rows)
+
